@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Group Dialog</title>
+<link rel="previous" href="cmdContmgm.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="cmdLayer.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="cmdContmgm.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="cmdLayer.html">Suivant</a></p>
+<h1><a name="cmdGroup"></a>2.9.4 Groupe d'objets (Group Dialog)</h1>
+<p>
+La commande <strong>Grouper</strong> combine des lignes et des formes(<a href = "cmdDraw.html%20# cmdDraw" >Section 2.3</a>)  sélectionnées (<a href="cmdSelect.html#cmdSelect">Section 2.2.15</a>) pour créer des structures (<a href="cmdHotBar.html#cmdHotBar">Section 2.7</a>). Vous pouvez attribuer à la structure (<a href="cmdHotBar.html#cmdHotBar">section 2.7</a>) un titre composé du fabricant, de la description et de la référence dans la boîte de dialogue <strong>Grouper</strong>.
+</p>
+<p>
+<img src="png.d/cgroup_fr.png">
+</p>
+<p>
+Le titre sera pré-rempli avec le titre de la dernière <strong>Structure</strong> que vous <strong>avez dissociée (ungrouped)</strong> (<a href="manageM.html#manageM">Section 2.9</a>). .
+</p>
+<p>
+Vous pouvez inclure des <strong>aiguillages</strong>, des <strong>coupons</strong> de voies, des voies <strong>Droites</strong> ou <strong>incurvées</strong> dans les objets sélectionnés, ce qui vous permet d'ajouter des détails esthétiques. définissez un <strong>aiguillage</strong>, ou créez une nouvelle définition <strong>d'aiguillage</strong>. Ceci peut également être utilisé s'il y a des emplacements de voie fixes sur une structure, comme dans un dépôt.
+</p>
+<p>
+Pour modifier une définition de <strong>Structure</strong> ou <strong>d'aiguillage</strong>, placez d'abord l'objet sur le plan, sélectionnez-le, puis <strong>Dissociez le (ungroup)</strong>. Les parties de l'objet peuvent désormais être modifiées à l'aide de <strong>Modifier</strong> (<a href="cmdModify.html#cmdModify">section 2.2.7</a>), <strong>Dessin (Draw)</strong>, (<a href="cmdDraw.html#cmdDraw">Section 2.3</a>) ou d'autres commandes. Une fois l'opération terminée, sélectionnez les parties de l'objet et utilisez la commande <strong>Grouper</strong> pour mettre à jour la définition (ou créez-en une nouvelle en modifiant le titre).
+</p>
+<p>
+La boîte de dialogue <strong>Grouper</strong> contient le fabricant, la description et la référence (titre) de la nouvelle définition. Les valeurs initiales sont basées sur les aiguillages et les structures sélectionnés ou sur le dernier objet <strong>Dissocié (Ungroup)</strong> (<a href="cmdUngroup.html#cmdUngroup">Section 2.9.11</a>). La boîte de dialogue contient également un case à cocher (<strong>Remplacer par un nouveau groupe</strong> ?), utilisée si vous souhaitez remplacer les objets sélectionnés par la nouvelle définition. Tous les champs répertoriés dans cette boîte de dialogue doivent contenir des données.
+</p>
+<p>
+Les données de définition seront ajoutées au fichier <code>xtrkcad.cus</code> (<a href="directories.html#directories">Section 1.9</a>) pour une utilisation ultérieure. Vous êtes encouragés à partager cette information avec les autres utilisateurs.
+</p>
+<p>
+Si vous modifiez une définition à partir d'un fichier de paramètres de bibliothèque <em>XTrackCAD</em>, la nouvelle définition remplacera la définition existante sur la <strong>Barre rapide (Hot bar)</strong> (<a href = "cmdHotBar.html%20# cmdHotBar" >Section 2.7</a>), sinon, elle sera ajouté à la fin de la <strong>Barre rapide</strong>. Vous pouvez utiliser la boîte de dialogue <strong>Matériels prototypes (Custom Management)</strong> (<a href="cmdCustmgm.html#cmdCustmgm">Section 2.9.2</a>) pour modifier le titre ou supprimer des définitions personnalisées.
+</p>
+<p>
+<strong>Remarque :</strong> Un groupe est limité à 128 segments de voie.
+</p>
+<hr>
+
+<hr><address></address></body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Move</title>
+<link rel="previous" href="chgBezier.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="moveByMouse.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="chgBezier.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="moveByMouse.html">Suivant</a></p>
+<h1><a name="cmdMove"></a>2.2.8 Déplacer</h1>
+<p>
+<img src="png.d/bmove.png">
+</p>
+<p>
+Cette commande permet de déplacer les objets sélectionnés (<a href="cmdSelect.html#cmdSelect">Section 2.2.15</a>) sur le plan.</p>
+<p>
+La commande <strong>Déplacer (Move)</strong> peut être appelée à l'aide de l'élément de menu <strong>Modifier>Déplacer (Change>Move)</strong> ou du bouton <strong>Déplacer(Move)</strong> et à partir du menu affiché par un <em>Clic-Droit</em> sur la <strong>Zone de dessin principale (Main Canvas)</strong> ou à l'aide de la commande <em>Maj+Gauche+Glisser</em> en mode <strong>Sélectionner</strong>.</p>
+<p>
+Pour utiliser cette commande avec succès, il faut sélectionner le ou les objets à déplacer avant de tenter de déplacer. Un objet est sélectionné à l'aide de la commande <em>Clic gauche</em>. Un groupe d'objets connectés peut être sélectionné à l'aide de la commande <em>Maj+clic gauche</em>.
+</p>
+<p>
+Un déplacement peut être réalisé en utilisant l'une des méthodes suivantes :
+</p>
+<p>
+
+</p>
+<dl><dd>
+<em>Clic gauche+Glisser</em> en utilisant la souris. Voir <a href="moveByMouse.html#moveByMouse">Section 2.2.8.1</a> pour plus de détails.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Sélection de quantités fixes ou renseignées de translations dans les directions X et Y à l'aide du menu <em>Contextuel</em>. Voir <a href="moveByMenu.html#moveByMenu">Section 2.2.8.2</a> pour plus de détails.
+</dd>
+</dl>
+<p>
+
+</p>
+<hr>
+<p>
+Vous pouvez activer un menu contextuel contenant des commandes contrôlant la manière dont les objets sont dessinés pendant les déplacements en entrant une commande <em>Maj+clic droit</em> tout en survolant la <strong>Zone de dessin principale (Main Canvas)</strong>.
+</p>
+<ul><li>
+<strong>Normal</strong> : les objets sont dessinés normalement. Cela peut prendre beaucoup de temps lorsque vous utilisez une machine lente et que vous déplacez un grand nombre d'objets.
+</li>
+</ul>
+<p>
+
+</p>
+<ul><li>
+<strong>Simple</strong> : les objets sont dessinés avec une seule ligne (au lieu de deux lors d'un zoom avant). Les structures sont dessinées en tant que contours, aucune extrémité ni ligne ne sont dessinés.
+</li>
+</ul>
+<p>
+
+</p>
+<ul><li>
+<strong>Bouts de voie (EndPoints)</strong> : seuls les points de terminaison sont dessinés (sous forme d'étoiles).
+</li>
+</ul>
+<p>
+<img src="png.d/mmovedraw_fr.png">
+</p>
+<hr>
+<p>
+<strong>Remarque :</strong> si la voie déplacée est connectée mais que la voie à laquelle elle est connectée n'est pas déplacée, elle sera déconnectée, à moins que cette voie ou la dernière voie sélectionnée ne soit une Cornu, dans ce cas, la cornu concernée sera modifiée (si possible) pour rester connectée.
+</p>
+<p>
+<strong>Remarque :</strong> les voies Cornu connectées à un pont tournant seront modifiées si ce dernier est déplacé ou pivoté. Elles restent connectées au bout du rayon où elles étaient. Il peut donc être souhaitable de les supprimer et de les redessiner si la rotation est importante.
+</p>
+<p>
+<strong>Remarque :</strong> la case <strong>Tracer les voies en mouvement (Draw Moving Tracks)</strong> dans <strong>Options de commandes</strong> (<a href="cmdCmdopt.html#cmdCmdopt">Section 2.10.2</a>) peut également être utilisé pour sélectionner la manière dont les objets sont dessinés lors des déplacements pour les déplacer ou les faire pivoter. Les options pour cette fonctionnalité sont :
+</p>
+<p>
+<img src="png.d/cmdopt_fr.png">
+</p>
+<p>
+Voir plus haut pour les explications.
+</p>
+<hr>
+
+<ul>
+<li><a href="moveByMouse.html#moveByMouse">2.2.8.1 Utilisation de la souris</a></li>
+<li><a href="moveByMenu.html#moveByMenu">2.2.8.2 Utilisation des valeurs de translation X et Y</a></li>
+</ul>
+
+<hr><address></address></body>
+</html>

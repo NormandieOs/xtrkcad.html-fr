@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Select</title>
+<link rel="previous" href="rotateByAlign.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="cmdSplitTrack.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="rotateByAlign.html">Previous</a> | <a href="contents.html">Contents</a> | <a href="IndexPage.html">Index</a> | <a href="cmdSplitTrack.html">Next</a></p>
+<h1><a name="cmdSelect"></a>2.2.15 Sélectionner</h1>
+<p>
+<img src="png.d/bselect.png">
+</p>
+<p>
+Un clic sur le bouton <strong>Sélectionner</strong> annule toutes les commandes actives, ferme toutes les fenêtres de dialogue ouvertes et active la fenêtre principale.
+</p>
+<p>
+En combinaison avec la souris, la commande <strong>Sélectionner</strong> peut être utilisée comme suit :
+</p>
+<dl><dd>
+<em>Clic gauche</em> - sélectionne un objet (ou désélectionne un objet sélectionné). Les objets sélectionnés apparaissent en rouge (sauf modification dans la boîte de dialogue <strong>Couleur</strong> (<a href="cmdRgbcolor.html#cmdRgbcolor">Section 2.10.1</a>)).
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<em>Maj + clic gauche</em> - sélectionne toutes les voies non sélectionnées connectées à la voie sélectionnée. La sélection s'arrête sur les voies sélectionnées. Attention : Ceci peut sélectionner toutes les voies du plan.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<em>Clic gauche + glisser</em> - met en surbrillance une zone où tous les objets de cette zone sont sélectionnés.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<em>Clic droit</em> - affiche un menu contextuel de commandes.
+<p>
+
+</p>
+<p>
+<img src="png.d/mselect_fr.png"><br/> ou <br/><img src="png.d/mselected_fr.png">
+</p>
+<p>
+
+</p>
+
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<em>Maj + clic droit</em> (<a href="cmdAcclKeys.html#cmdAcclKeys">Section 3.4</a>) : affiche un menu contextuel d'options permettant de contrôler le dessin des objets lors des déplacements et des rotations. (au dessous de). S'il existe des objets sélectionnés, des éléments de menu supplémentaires vous permettent de faire pivoter les objets sélectionnés selon différents angles.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<em> Clic droit + Glisser</em> : met en surbrillance une zone et désélectionne tous les objets de cette zone.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<em>Maj + clic gauche + glisser</em> : déplace les objets sélectionnés (commande <strong>Déplacer</strong> (<a href="cmdMove.html#cmdMove">Section 2.2.8</a>)).
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<em>Maj + clic droit + glisser</em> : fait pivoter les objets sélectionnés (commande <strong>Rotation</strong> (<a href="cmdRotate.html#cmdRotate">Section 2.2.14</a>)).
+<ul><li>
+Si vous appuyez sur la touche <em>Ctrl</em> pendant le glissement, la rotation se produira par incréments de 15 °.
+</li>
+</ul>
+
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<em>Ctrl + clic gauche + glisser</em> : déplace les libellés d'aiguillage et d'élévation (voir également la commande de <strong>Description de déplacement</strong> (<a href="cmdMoveLabel.html#cmdMoveLabel">section 2.2.9</a>) ).
+</dd>
+</dl>
+<p>
+
+</p>
+<p>
+Les commandes suivantes agissent sur les objets que vous avez sélectionnés :
+</p>
+<ul><li>
+<strong>Déplacer (Move)</strong> (<a href="cmdMove.html#cmdMove">Section 2.2.8</a>) les objets sélectionnés.
+</li>
+<li>
+<strong>Faire pivoter (Rotate)</strong> (<a href="cmdRotate.html#cmdRotate">Section 2.2.14</a>) les objets sélectionnés.
+</li>
+<li>
+<strong>Inverser (Flip)</strong> (<a href="cmdFlip.html#cmdFlip"> Section 2.2.5 </a>) (reflète) les objets sélectionnés.
+</li>
+<li>
+<strong>Supprimer (Delete)</strong> (<a href="cmdDelete.html#cmdDelete"> Section 2.4.3 </a>) les objets sélectionnés.
+</li>
+<li>
+<strong>Masquer (Hide)</strong> dans un tunnel (<a href="cmdTunnel.html#cmdTunnel">Section 2.4.4).
+</a>).
+</li>
+<li>
+<strong>Déplacer (Move)</strong> au-dessus ou au-dessous (<a href="cmdAboveBelow.html#cmdAboveBelow">section 2.4.1</a>).
+</li>
+<li>
+<strong>Nomenclature (Parts list)</strong> (<a href="cmdEnum.html#cmdEnum">Section 2.9.6</a>) des objets sélectionnés.
+</li>
+<li>
+<strong>Modifiez (Change)</strong> la largeur des rails des voies.
+</li>
+<li>
+<strong>Exporter</strong> (<a href="cmdExport.html#cmdExport">Section 2.5.1</a>) les objets sélectionnés.
+</li>
+<li>
+Créer une définition de structure ou d'aiguillage à partir d'objets <strong>Groupés (Grouped)</strong> (<a href="cmdGroup.html#cmdGroup">Section 2.9.4</a>).
+</li>
+<li>
+<strong>Modifier l'échelle (Rescale)</strong> (<a href="cmdRescale.html#cmdRescale"> Section 2.2.1 </a>) des objets sélectionnés.
+</li>
+</ul>
+<p>
+Les commandes <strong>Couper (Cut)</strong>, <strong>Copier (Copy)</strong> et <strong>Coller (Paste)</strong> trouvées dans <strong>Editer (Edit)</strong> (<a href = "editM.html%20# editM ">Section 2.4</a>) fonctionnera également sur les objets sélectionnés.</p>
+<p>
+Remarques :
+</p>
+<ul><li>
+Une forme pleine (<a href="cmdDraw.html#cmdDraw">Section 2.3</a>) peut être sélectionnée en cliquant sur son bord.
+</li>
+</ul>
+<p>
+
+</p>
+<ul><li>
+Les connexions entre voies sélectionnées et non sélectionnées seront interrompues lorsque les voies sélectionnées seront déplacées. Si l'échelle du dessin est égale ou inférieure à 8:1, ces connexions sur le point d'être rompues sont signalées par un X rouge.
+</li>
+</ul>
+<p>
+
+</p>
+<ul><li>
+Vous pouvez utiliser la commande <strong>Tout sélectionner (Select All)</strong> du menu Modifier (<a href="editM.html#editM">Section 2.4</a>) pour sélectionner tous les objets de la présentation.
+</li>
+</ul>
+<p>
+
+</p>
+<ul><li>
+Le bouton radio de commande Option par défaut (<a href="cmdCmdopt.html#cmdCmdopt">Section 2.10.</a>) permet de contrôler si la <em> Propriétés</em> (<a href = "cmdDescribe .html # cmdDescribe ">Section 2.2.12</a>) ou la commande <em>Sélectionner</em> est utilisée comme commande par défaut.
+</li>
+</ul>
+<p>
+
+</p>
+<ul><li>
+Appuyez sur la touche <em>Echappement (Escape)</em> pour désélectionner toutes les voies sélectionnées.
+</li>
+</ul>
+<hr>
+
+<hr><address></address></body>
+</html>

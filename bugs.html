@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Reporting Bugs</title>
+<link rel="previous" href="bugs_enhancements.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="enhancements.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="bugs_enhancements.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="enhancements.html">Suivant</a></p>
+<h1><a name="bugs"></a>1.11.1 Signaler des <a name="i0"></a>Bugs</h1>
+<p>
+Si vous rencontrez un bogue non signalé, veuillez en fournir les informations au <strong>Trackeur de bogues</strong> situé sur le site du projet <a href="https://sourceforge.net/p/xtrkcad-fork/bugs/" target="_blank"><em>XTrackCAD</em> Fork Project Site</a>.
+</p>
+<p>
+<strong>Assurez-vous de fournir les trois éléments de base d'un rapport de bogue : </strong>ce que vous faisiez au moment du bogue, ce que vous attendiez et ce qui s'est réellement passé. Ce détail aidera les développeurs à reproduire l'erreur, à trouver et à corriger le code fautif.
+</p>
+<dl><dt>
+<strong>Voici un exemple de rapport de bogue :</strong>
+</dt>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Une fois l'installation de <em>XTrackCAD</em> terminée sur un ordinateur Dell doté de 1024 Mo de mémoire sous Windows 7, l'erreur suivante s'est produite lors de la tentative de modification d'un libellé de texte;
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<code>Avis : allocateButt : Impossible de trouver 13. Voulez-vous enregistrer la présentation?</code>
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Si vous sélectionnez "Oui" ou "Non", une erreur Windows se produit et <em>XTrackCAD</em> se ferme.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+L'erreur peut être réproduite en ouvrant le fichier nommé cascade.xtc. En réglant le grossissement sur 4:1. Lors d'une tentative de déplacement de l’étiquette de texte nommée "Granville Island" située aux coordonnées approximatives de x = 8", y = 4'5" de la grille. La sélection de l'étiquette provoque l'erreur.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+L'erreur se répète avec d'autres fichiers contenant des étiquettes de texte.
+</dd>
+</dl>
+<p>
+<strong>Toujours d'abord rechercher la base de données de bogues.</strong> C'est un si bon conseil que nous vous le répétons de nouveau. Toujours rechercher d'abord la base de données de bogues. Il y a de fortes chances pour que si vous avez trouvé un problème, quelqu'un d'autre le trouve aussi. Si vous passez quelques minutes à vous assurer que vous ne déposez pas un bogue en double, ce seront quelques minutes de plus qui pouront être consacrées à la résolution d'un nouveau bogue plutôt que de perdre du temps à trier des rapports de bogues en double.
+</p>
+<p>
+<strong>Si vous ne comprenez pas un message d'erreur, demandez de l'aide.</strong> Ne signalez pas un message d'erreur que vous ne comprenez pas comme un bug. Vous pouvez demander de l'aide pour comprendre ce qui se passe avant d'annoncer qu'un message d'erreur que vous ne comprenez pas est un bogue.(Une fois que vous avez compris le message d'erreur et que vous avez une bonne suggestion pour le rendre plus clair, vous pouvez envisager de le signaler en tant que <a href="https://sourceforge.net/p/xtrkcad-fork/feature-requests/" target="_blank"><em>XTrackCAD</em> Feature Request</a>).
+</p>
+<p>
+<strong>Soyez bref, mais n'omettez pas des détails importants. </strong>C'est une bonne démarche. Mais il y a quelques directives générales :
+</p>
+<p>
+Rappelez-vous les trois informations de base : ce que vous faisiez, ce que vous attendiez et ce qui s'est passé.
+</p>
+<p>
+Si vous pouvez recréer le problème, utilisez la commande <strong>Macro&gt;Record</strong> pour enregistrer ce qui s'est passé. Essayez d’isoler le problème en créant une contexte minimal et en enregistrant le moins de commandes possible.
+</p>
+<p>
+<strong>Ne signalez pas de bugs concernant les anciennes versions.</strong> Chaque fois qu'une nouvelle version d'<em>XTrackCAD</em>  est publiée, de nombreuses améliorations sont ajoutées et les bogues connus sont corrigés. Si vous utilisez une version d'<em>XTrackCAD</em>  qui comporte plus de deux révisions antérieures à la dernière version, vous devez effectuer une mise à niveau vers la dernière version pour vous assurer que le bogue que vous rencontrez existe toujours. (Ce n’est pas une mauvaise idée de mettre à niveau votre version vers la plus récente, même si  c'est une version antérieure.)
+</p>
+<p>
+<strong>Signalez un seul problème dans chaque rapport de bogue. </strong>Si vous rencontrez deux bogues ou plus qui ne semblent pas liés, créez un rapport de bogue distinct pour chacun. Cela facilite la gestion des tâches assignées et peut permettre de résoudre plus rapidement le problème.
+</p>
+
+<hr><address></address></body>
+</html>

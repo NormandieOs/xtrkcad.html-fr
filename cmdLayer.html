@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Layers Dialog</title>
+<link rel="previous" href="cmdGroup.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="cmdEnum.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="cmdGroup.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="cmdEnum.html">Suivant</a></p>
+<h1><a name="cmdLayer"></a>2.9.5 Menu Calques (Layers Dialog)</h1>
+<p>
+Chaque objet est contenu dans un calque. Les objets créés indépendamment d'autres objets (tels que les voies droites (<a href="cmdStraight.html#cmdStraight">Section 2.1.6</a>) ou du texte (<a href="cmdText.html#cmdText">Section 2.3.7</a>)) sont créés dans le calque courant. Les objets associés à d'autres objets (telles que les voies créées par <strong>Modifier</strong> (<a href="cmdModify.html#cmdModify">Section 2.2.7</a>) ou <strong>Raccorder</strong> (<a href="cmdJoin.html#cmdJoin">Section 2.2.6</a>)) sont créées dans le même calque que le ou les objets associés.
+</p>
+<p>
+La boîte de dialogue <strong>Calques (Layers)</strong> vous permet de modifier divers attributs de chacun des 99 <strong>calques</strong> possibles.
+</p>
+<p>
+Les attributs associés à un calque sont stockés dans le fichier calque associé et s'appliquent uniquement au calque ouvert au moment d'une modification. Il est possible d'appliquer des attributs d'un fichier de calque à un autre à l'aide des boutons <strong>Charger (Load)</strong> et <strong>Sauver (Save)</strong>.
+</p>
+<p>
+<img src="png.d/dlayers_fr.png">
+</p>
+<p>
+La liste déroulante située en haut de la boîte de dialogue sélectionne le <strong>calque</strong> qui vous intéresse. Les N° de calques non vides sont suivis d'un <code>+</code>.
+</p>
+<p>
+La zone d'édition <strong>Nom (Name)</strong> contient le nom du <strong>Calque (Layer)</strong>. Ce nom figure dans la liste déroulante <strong>Calque courant (Current Layer)</strong> de la <strong>barre d'outils (Tool-bar)</strong> (<a href="mainW.html#mainW">Section 3.1</a>). Le <strong>Nom (Name)</strong> est également affiché comme bulle d'aide pour le <strong>Bouton de calque (Layer Button)</strong> correspondant.
+</p>
+<p>
+Le bouton <strong>Couleur</strong> permet de spécifier la couleur des voies si le bouton radio <strong>couleur de calque (Color Layers)</strong> (<a href="cmdDisplay.html#cmdDisplay">Section 2.10.3</a>) de la boîte de dialogue <strong>Afficher (Display)</strong> est coché.
+</p>
+<p>
+La case à cocher <strong>Visible</strong> détermine si le <strong>Calque (Layer)</strong> est affiché dans la fenêtre principale (<a href="mainW.html#mainW">Section 3.1</a>).
+</p>
+<p>
+La case à cocher <strong>Gelé (Frozen)</strong> indique que les voies de ce <strong>calque (Layer)</strong> ne peuvent ni être modifiées ni supprimées.
+</p>
+<p>
+La case à cocher <strong>Sur la carte (On map)</strong> indique si le <strong>Calque (Layer)</strong> est affiché sur la fenêtre de navigation (<a href="cmdMap.html#cmdMap">Section 3.2.2</a>).
+</p>
+<p>
+Vous ne pouvez pas décocher <strong>Visible</strong> ou cocher <strong>Gelé (Frozen)</strong> pour trouver le <strong>Calque en cours (Current Layer)</strong>.
+</p>
+<p>
+Le champ <strong>Qté</strong> affiche le nombre d'objets du calque sélectionné.
+</p>
+<p>
+Le bouton <strong>Sauver</strong> enregistre les attributs du calque dans le fichier <code>xtrkcad.ini</code> afin qu'ils puissent être chargés dans un fichier existant ou bien un nouveau. Une fois sauvegardées et sauf réinitialisation d'<em>XTrackCAD</em> <strong>, par défaut</strong>, les informations des calques modifiés sont appliquées à chaque nouveau fichier.
+</p>
+<p>
+Le bouton <strong>Charger (Load)</strong> lit les attributs des calques à partir du fichier <code>xtrkcad.ini</code>, puis les applique à chaque calque du fichier du projet actuel.
+</p>
+<p>
+Le bouton <strong>Défauts (Defaults)</strong> permet de restaurer les attributs par défaut des paramètres <em>XTrackCAD</em>.
+</p>
+<p>
+La partie inférieure de la boîte de dialogue contient la zone d'édition du <strong>Nombre de boutons de calques (Number of Layer Buttons)</strong>. C'est pour contrôler le nombre de <strong>boutons de calque</strong> affichés dans la <strong>barre d'outils</strong> (<a href="mainW.html#mainW">section 3.1</a>). Ces boutons facilitent le basculement entre les calques. Le nombre maximal de <strong>boutons de calque</strong> pouvant être affichés est de 20. Par conséquent, vous devez utiliser les calques 1 à 20 pour les objets que vous allez afficher et masquer fréquemment.
+</p>
+<p>
+<img src="png.d/blayer.png">
+</p>
+<p>
+Les <strong>boutons de calque</strong> de la barre d'outils (<a href="mainW.html#mainW">Section 3.1</a>) contrôlent le calque correspondant au <strong>calque actuel</strong> ainsi que les <strong>Calques</strong> affichés sur le plan principal. Chaqu'un de ces boutons est un raccourci de la case à cocher <strong>Visible</strong> de la boîte de dialogue <strong>Calques (Layers)</strong> du calque correspondant.
+</p>
+<p>
+Le calque courant est sélectionné en choisissant une des valeurs de la liste déroulante des calques. Si le calque que vous avez sélectionné n'était pas visible, il pourra l'être.
+</p>
+<p>
+Vous pouvez masquer (ou afficher, s'ils ne sont pas visibles) les différents calques en appuyant sur l'un des <strong>boutons Calques (Layer Buttons)</strong> de la barre d'outils (si vous avez configuré la barre d'outils (<a href = "toolbarM.html%20#toolbarM ">Section 2.12.2</a>) pour afficher les boutons de calques). Si un calque n'est pas visible, le bouton du calque correspondant pourra être activé. Un calque actif ou l'actuel ne peut pas être masqué.
+</p>
+<p>
+La couleur de chaque bouton de calque indique la couleur qui sera utilisée pour dessiner les voies de ce calque, si vous sélectionnez <strong>Couleur des calques (Color Layers)</strong> (<a href="cmdDisplay.html#cmdDisplay">Section 2.10.3</a>) dans la boîte de dialogue <strong>Options>Affichage...</strong>.
+</p>
+<p>
+Tous les objets sélectionnés sont désélectionnés lorsque le calque est défini comme non visible. Si un calque n'est pas visible, vous ne pouvez pas sélectionner d'objets dans ce calque. C'est comme si les objets n'existaient pas jusqu'à ce que vous le montriez à nouveau.
+</p>
+<p>
+La commande <strong>Déplacer vers le calque actuel (Move To Current Layer)</strong> du menu Edition (<a href="editM.html#editM">section 2.4</a>) déplacera tous les éléments sélectionnés (<a href = "cmdSelect.html%20# cmdSelect ">Section 2.2.15</a>) sur le calque actuel.
+</p>
+<p>
+Les objets sont dessinés dans la fenêtre de la carte, si <strong>Sur la carte (On Map)</strong> est coché pour le calque sur lequel ils se trouvent. 
+</p>
+<hr>
+
+<hr><address></address></body>
+</html>

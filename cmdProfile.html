@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Profile</title>
+<link rel="previous" href="cmdPan.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="cmdDescribe.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="cmdPan.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="cmdDescribe.html">Suivant</a></p>
+<h1><a name="cmdProfile"></a>2.2.11 Profil - élévations</h1>
+<p>
+La boîte de dialogue <strong>Profil</strong> crée et affiche un profil d'élévations, de distances et des pentes d'un circuit sur le plan.</p>
+<p>
+<img src="png.d/dcprofile_fr.png">
+</p>
+<p>
+Choisissez un chemin en utilisant un <em>Clic gauche</em> sur les jonctions de voies. Au fur et à mesure que chaque point est choisi, le chemin se complète via le tracé le plus court. En sélectionnant la fin du tracé, le chemin est ramené à la dernière <strong>Altitude définie</strong> (le cas échéant, sinon le chemin est effacé).
+</p>
+<p>
+Si aucune route n'est possible, un message d'erreur est affiché. Cela peut arriver pour plusieurs raisons :</p>
+<ul><li>
+Des voies ne sont pas connectées. Vérifiez le en utilisant <em>Maj+clic gauche</em> sur une voie à l'aide de la commande <strong>Sélectionner</strong> (<a href="cmdSelect.html#cmdSelect">Section 2.2.15</a >). Ce qui sélectionne toutes les voies connectées (directement ou indirectement). Voir si l'autre voie est sélectionnée.
+</li>
+</ul>
+<p>
+
+</p>
+<ul><li>
+<Strong>Ignoré</strong> (<a href="cmdElev.html#cmdElev">Section 2.2.4</a>) est peut-être l'un des points de terminaison de l'itinéraire. Recherchez des points bleus sur le tracé prévu lorsque vous utilisez les commandes Profil ou <strong>Élévation</strong> (<a href="cmdElev.html#cmdElev">Section 2.2.4</a>).
+</li>
+</ul>
+<p>
+
+</p>
+<ul><li>
+Le seul itinéraire possible se connecte à un tracé de voie qui est déjà sur le même chemin et qui n'est pas la fin de celui ci. Supprimez la fin de l'itinéraire jusqu'à ce que la voie connectée ne soit plus sur ce même chemin.
+</li>
+</ul>
+<p>
+Le chemin est tracé dans la couleur du profil (<a href="cmdRgbcolor.html#cmdRgbcolor">Section 2.10.1</a>) (violet par défaut) du schéma.</p>
+<p>
+Si le chemin le plus court ne vous convient pas, vous pouvez choisir des points de jonction plus proche du bout du tracé. Vous pouvez également <strong>Ignorer</strong> (<a href="cmdElev.html#cmdElev">Section 2.2.4</a>) pour empêcher le tracé de choisir un itinéraire passant par ce point de jonction. Maj+Clic droit (<a href="cmdAcclKeys.html#cmdAcclKeys">Section 3.4</a>) affiche un menu contextuel vous permettant de modifier le point de jonction spécifié en tant que <strong>Défini</strong>, <strong>Ignoré</strong> ou bien <strong>Aucune</strong> élévation de Point de jonction.
+</p>
+<p>
+Chaque extrémité d'<strong>élévation définie</strong> sur le tracé est dessinée sous forme de barre verticale, libellée avec sa hauteur et sa distance depuis le début du tracé.
+</p>
+<p>
+La <strong>pente</strong> située entre deux points est affichée entre les barres verticales. La ligne <strong>pente</strong> est dessinée en bleu si cette partie du chemin ne contient pas plus d'un chemin le plus court entre les élévation définies sur les points de jonction. Sinon, il est tracé en rouge pour indiquer que la pente est une moyenne et que la pente réelle peut varier pour un segment de voie particulier. Pour plus de détails, voir Calcul de l'élévation dynamique (<a href="computeElevations.html#computeElevations">Section 2.2.4.1</a>).
+</p>
+<p>
+Les <strong>gares (stations)</strong> situées sur le tracé apparaissent en bas du <strong>Profil</strong>.
+</p>
+<p>
+Les valeurs des <strong>élévations spécifiées</strong> peuvent être modifiées dans la fenêtre du profil à l'aide de <em>Gauche+Glisser</em>. Au fur et à mesure que vous <strong>faites glisser</strong>, les nouvelles élévations et pentes s'affichent de part et d'autre en bas de la boîte de dialogue du profil.
+</p>
+<p>
+Le bouton <strong>Terminé (Done)</strong> ferme la boîte de dialogue.
+</p>
+<p>
+Le bouton <strong>Effacer (Clear)</strong> préserve les paramètres d'élévation établis le long du trajet de profil actuel, supprime tous les points de profil et laisse la boîte de dialogue <strong>Profil</strong> ouverte pour la sélection du prochain ensemble de points de profil. Cette fonction est utile lorsqu'il est nécessaire d'afficher des élévations le long de plusieurs cheminements de profil.
+</p>
+<p>
+Le bouton <strong>Imprimer (Print)</strong> permet d'imprimer la boîte de dialogue. Le rapport hauteur/largeur est conservé sur l'impression. Vous souhaiterez probablement l'imprimer en format paysage.
+</p>
+<hr>
+
+<hr><address></address></body>
+</html>

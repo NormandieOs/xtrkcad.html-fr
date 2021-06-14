@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Export to Bitmap</title>
+<link rel="previous" href="cmdExport.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="ExportDXF.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="cmdExport.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="ExportDXF.html">Suivant</a></p>
+<h1><a name="cmdOutputbitmap"></a>2.5.2 <a name="i0"></a>Exporter en Bitmap</h1>
+<p>
+Cet élément de menu crée un fichier bitmap du plan.
+</p>
+<p>
+<img src="png.d/bitmap_fr.png">
+</p>
+<p>
+La boîte de dialogue <strong>Bitmap</strong> spécifie le style et la taille du bitmap. Les trois cases à cocher (<strong>Titres à imprimer (Print Titles)</strong>, <strong>Bordures à imprimer (Print Borders)</strong> et <strong>Ligne médiane à imprimer (Print Centerline)</strong>) déterminent si le titre de la mise en forme (<a href = "cmdLayout.html%20#cmdLayout ">Section 2.10.6</a>), les bordures ou les lignes centrales de la voie sont imprimées sur le bitmap. La taille du bitmap est plus petite si ceux-ci sont désactivés.
+</p>
+<p>
+L'impression des lignes centrales de la voie (également visible lorsque vous effectuez un zoom avant 1: 1) est utile lorsque vous imprimez ultérieurement le bitmap en taille réelle pour poser une voie.
+</p>
+<p>
+Si la grille d'alignement (<a href="cmdGrid.html#cmdGrid">Section 2.12.1</a>) est visible, elle sera imprimée sur le bitmap.
+</p>
+<p>
+Le contrôle <strong>DPI</strong> (ou <strong>DPCM</strong> si vous utilisez des unités métriques (<a href="cmdPref.html#cmdPref">Section 2.10.7</a>)) spécifie le nombre de pixels par pouce (ou centimètre) du bitmap. Vous pouvez entrer des valeurs comprises entre 0,1 et 100. Des valeurs plus grandes donneront un fichier bitmap plus volumineux. les bitmaps doivent avoir une hauteur ou une largeur inférieure à 32 000 pixels.
+</p>
+<p>
+La largeur, la hauteur et la taille approximative du fichier sont indiquées.
+</p>
+<p>
+Remarque : cette commande peut créer un fichier très volumineux et consommer beaucoup de ressources système et de temps.
+</p>
+<p>
+Lorsque vous appuyez sur le bouton <strong>OK</strong>, une boîte de dialogue <strong>Enregistrer le fichier (File Save)</strong> apparaît pour vous permettre de choisir le nom du fichier Bitmap.
+</p>
+<p>
+Le format du fichier dépend du système d'exploitation : sous MS-Windows, il s'agit d'un fichier Windows Bitmap (.BMP), sous Linux, d'un fichier X11 Pixmap (.XPM).
+</p>
+<hr>
+
+<hr><address></address></body>
+</html>

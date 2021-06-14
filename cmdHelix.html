@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Helix Track</title>
+<link rel="previous" href="cmdHandLaidTurnout.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="cmdParallel.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="cmdHandLaidTurnout.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="cmdParallel.html">Suivant</a></p>
+<h1><a name="cmdHelix"></a>2.1.4 Voie hélicoïdale</h1>
+<p>
+Une hélicoïde est utilisée pour modifier l'élévation d'une voie dans un espace restreint. Une hélicoïde est dessinée comme un cercle de voie, mais en 3 dimensions, elle ressemblerait à un tire bouchon ou un pas de vis.
+</p>
+<p>
+<img src="png.d/ahelix_fr.png">
+</p>
+<p>
+Une helicoïde est définie par son nombre de <em>tours</em> (turns) et son <em>rayon</em> (radius). 
+</p>
+<p>
+La boîte de dialogue "hélicoïde" vous permet de calculer ces valeurs en fonction d'autres paramètres tels que la <em>Différence d'élévation</em>, la <em>Pente</em> (Grade), La <em>Séparation angulaire</em> verticale. La <em>Séparation angulaire</em> est la différence en degrés vue de dessus, entre l'entrée et la sortie de l'helicoïde. Les valeurs interéagissent les unes sur les autres. Par exemple, augmenter le <em>Rayon</em> fait diminuer la <em>Pente</em>. Changer le nombre de <em>Tours</em> affecte la <em>Séparation verticale</em> et soit le <em>Rayon</em> soit la <em>Pente</em>. 
+</p>
+<p>
+Dans le cas où plusieurs paramètres peuvent être affectés (par exemple changer la <em>Différence d'élévation</em> peut affecter le <em>Rayon</em> ou la <em>Pente</em>) le dernier paramètre modifié sera conservé. Si vous modifiez la <em>Pente</em> puis la <em>Différence d'élévation</em>, alors le <em>Rayon</em> sera ajusté. 
+</p>
+<p>
+La modification de la <em>Séparation verticale </em> affecte la valeur <em>Tours</em> qui doit être une valeur entière (pas de fraction), ce qui en retour affecte la <em>Séparation verticale</em>. Lorsque vous définissez la <em>Séparation verticale</em>, vous spécifiez la séparation minimale qui est arrondie par exés à la valeur réelle.
+</p>
+<p>
+Remarque : seuls <em>Rayon</em> et <em>Tours</em> sont utilisés lors de la création de l'hélicoïde. Après avoir raccordé l'hélicoïde à d'autres voies, il vous sera utile de paramétrer les hauteurs de chaque extrémité. Pour cela, vous pouvez utiliser la commande "Elévation"  (<a href="cmdElev.html#cmdElev">Section 2.2.4</a>). Un gros point rouge localisera le réglage.
+</p>
+<p>
+Une hélicoïde se place de la même façon qu'une voie circulaire (<a href="cmdCircle.html#cmdCircle"> Section 2.1.1 </a>) à ceci prés que vous spécifiez le nombre de tours ainsi que son rayon. Ensuite, l'hélicoïde sera repositionée sur le schéma.
+</p>
+<p>
+Vous pouvez raccorder une hélicoïde de la même façon qu'une voie circulaire. Cependant, une fois jointe, l'helicoïde est toujours représentée comme un cercle. 
+</p>
+<p>
+L'étiquette de l'hélicoïde est dessinée en son centre . Si l'élévation est définie (soit par une élévation définie soit par une connexion à un point d'élévation existant) pour les deux extrémités de l'hélicoïde, l'étiquette contient le pente calculée et la séparation verticale entre les couches ainsi que le nombre de tours et la longueur totale. L'étiquette peut être déplacée ou désactivée en utilisant la commande "Déplacement des étiquettes" (<a href="cmdMoveLabel.html#cmdMoveLabel">Section 2.2.9</a>).
+</p>
+<hr>
+
+<hr><address></address></body>
+</html>

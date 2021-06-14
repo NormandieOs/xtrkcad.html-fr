@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Layout Control Elements Dialog</title>
+<link rel="previous" href="cmdCustmgm.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="cmdGroup.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="cmdCustmgm.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="cmdGroup.html">Suivant</a></p>
+<h1><a name="cmdContmgm"></a>2.9.3  Menu des éléments de contrôle (Layout Control Elements Dialog)</h1>
+<p>
+Cette boîte de dialogue permet de gérer les éléments de contrôle du projet (blocs, moteurs d'aiguillages et signaux).
+</p>
+<p>
+Les éléments de contrôle sont des éléments liés au contrôle du réseau : blocs (détection d'occupation), moteurs d'aiguillages (aiguillages à "manoeuvrer"), signaux, commandes (autres actionneurs ou périphériques de sortie) et capteurs (autres capteurs ou périphériques d'entrée). Ces éléments ne concernent pas directement les éléments "physiques" du réseau, mais font plutôt référence aux éléments utilisés par le logiciel de contrôle du réseau. Ces éléments contiennent des "scripts", qui ne sont en réalité que des éléments textuels fournissant des informations pour le logiciel de contrôle du réseau et établissent un pont entre les éléments physiques du réseau (comme les voies ou les aiguillages) et le logiciel de contrôle du réseau. Ces objets textuels peuvent être du code logiciel réel ou des événements LCC (pour des éléments de périphérique d'E/S sur un réseau LCC (Layout Command Control)) ou des adresses DCC pour des décodeurs fixes, etc. XTrackCAD n'impose aucune sorte de syntaxe ou de format - laissé en place à un autre logiciel susceptible de charger et d'analyser le fichier du projet XTrkCAD. Tout ce que fait XTrackCAD, c'est fournir un emplacement unifié pour stocker ces informations et pour établir un mappage (association) entre ces informations de contrôle et le plan lui-même.
+</p>
+<p>
+<img src="png.d/lcemanager_fr.png">
+</p>
+<p>
+La partie principale de cette boîte de dialogue contient une liste des éléments de contrôle du réseau en cours d'étude (blocs, commutateurs, signaux, contrôles et capteurs), ainsi que les voies auxquelles ils se rapportent. Ces éléments sont ajoutés au plan à partir du menu "Barre rapide" ou à partir du menu "Ajouter".
+</p>
+<p>
+Le bouton <strong>Editer</strong> permet de modifier un élément de contrôle. Alors que le bouton <strong>Effacer</strong> supprime le ou les éléments sélectionnés.
+</p>
+
+<hr><address></address></body>
+</html>

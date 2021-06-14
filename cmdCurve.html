@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Curved Track</title>
+<link rel="previous" href="cmdCircle.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="cmdHandLaidTurnout.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="cmdCircle.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="cmdHandLaidTurnout.html">Suivant</a></p>
+<h1><a name="cmdCurve"></a>2.1.2 Voies courbe</h1>
+<p>
+<img src="png.d/bcurve.png">
+</p>
+<p>
+Créer une voie incurvée se fait en deux étapes. Les quatre méthodes (et leurs raccourcis clavier) pour créer une voie courbe sont : 
+</p>
+<dl><dd>
+<img src="png.d/bcurve1.png"> (<code>Control-4</code>) Cliquer avec la souris sur l'emplacement de la première extrémité de voie, tirer la souris dans son axe puis lacher. Cliquer sur la double flèche rouge en la tirant dans la direction de la deuxième extrémité souhaitée. <br/>Si vous maintenez la touche Maj enfoncée lorsque le premier point d'extrémité est positionné et que le curseur se trouve sur une voie, la nouvelle extrémité de la courbe "s'alignera" sur l'extrémité de la voie ouverte la plus proche et vous pourrez faire glisser la seconde extrémité alignée sur cette voie. Une fois activée, la nouvelle voie sera connectée à cette première voie.
+
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<img src="png.d/bcurve2.png"> (<code>Control-5</code>) Cliquer avec la souris sur l'emplacement de la première extrémité de voie, tirer la souris perpendiculairement vers le centre de la future voie courbe, ceci déterminera son rayon, puis relâchez-la. Cliquer sur la double flèche rouge en la tirant en arc de cercle dans la direction de la deuxième extrémité de voie. <br/>Si vous maintenez la touche Maj enfoncée lorsque vous placez le premier point d'extrémité et que le curseur se trouve sur une voie, la nouvelle extrémité de la courbe "s'aligne" sur l'extrémité de la voie ouverte la plus proche et vous pouvez faire glisser le centre perpendiculairement à cette extrémité. Une fois la voie activée, la nouvelle voie sera connectée à cette première voie.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<img src="png.d/bcurve3.png"> (<code>Control-6</code>) Cliquer avec la souris sur le futur centre de la courbe et  tirer un rayon, puis relacher. <br/>Cliquer sur la double flèche rouge en la tirant en arc de cercle en direction de la deuxième extrémité souhaitée. La touche "Maj" n'a aucun effet.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<img src="png.d/bcurve4.png"> (<code>Control-7</code>) Cliquer avec la souris sur l'emplacement de la première extrémité de voie, tirer la souris vers l'emplacement de la deuxième extrémité, puis relacher.  <br/>Cliquer sur la double flèche rouge au centre de la corde puis en la tirant pour former la courbe. La touche "Maj" n'a aucun effet.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<img src="png.d/bezier.png"> Placez un point de terminaison et faites glisser avec la souris pour obtenir le deuxième point de contrôle, puis relâchez. A partir du premier point, faites glisser pour placer le premier point de contrôle, puis relâchez. Toujours à partir du premier point faites glisser pour placer le deuxième point de terminaison, puis relâchez.<br/>
+Une fois les 4 points placés, vous pouvez en choisir un à la fois en le faisant glisser pour le déplacer. Validez la courbe en appuyant sur Entrée ou rejetez-la avec Esc.<br/> 
+Si la touche Maj est maintenue enfoncée lorsqu'un des points d'extrémité est positionné, elle "l'accroche" à un point d'extrémité de voie ouverte sous le curseur, il ne vous restera plus qu'à poursuivre en faisant glisser le point de contrôle de fin de voie. Une fois la nouvelle voie activée, elle sera connectée à cette voie existante.
+</dd>
+</dl>
+<p>
+
+</p>
+<p>
+Un menu déroulant est appelé par le bouton flèche vers le bas (<img src="png.d/bmenu.png">) situé sur le coté droit du bouton de création de la voie courbe.  En fonction de la sélection précédente, le bouton de piste incurvée ressemblera à <img src="png.d/bcurve1.png">, <img src="png.d/bcurve2.png">, <img src="png.d/bcurve3.png">, <img src="png.d/bcurve4.png"> ou <img src="png.d/bezier.png">.
+</p>
+<dl><dd>
+<img src="png.d/bmcurved_fr.png">
+</dd>
+<dd>
+<em>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Menu déroulant Voie courbe</em>
+</dd>
+</dl>
+<p>
+Dans tous les cas sauf dans le cas d'une Bezier, deux flèches rouges seront dessinées à la fin de la première étape indiquant que vous pouvez étirer avec la souris pour effectuer la seconde étape. 
+</p>
+<p>
+Une voie droite sera crée si le second bout de voie est aligné avec le premier. 
+</p>
+<p>
+Si la grille magnétique (<a href="cmdGrid.html#cmdGrid">Section 2.12.1</a>) est activée, les bouts de voie seront aimantés dessus. 
+</p>
+<p>
+Optionnellement, le centre de la courbe et le rayon peuvent être affichés sur la courbe. Cette option est activée par la commande Déplacement des étiquettes (<a href="cmdMoveLabel.html#cmdMoveLabel">Section 2.2.9</a>). 
+</p>
+<p>
+Pour les Béziers, le point de contrôle actif sera tracé en rouge et les points d'extrémité disponibles seront représentés par des cercles.
+</p>
+<p>
+<strong> Remarque: </strong> vous pouvez également créer des voies droites et courbes en utilisant la <a href="cmdModify.html#cmdModify"> section 2.2.7 </a> en faisant glisser une voie supplémentaire à partir d'une extrémité ouverte.</p>
+<hr>
+
+<hr><address></address></body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Grid Dialog</title>
+<link rel="previous" href="viewM.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="toolbarM.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="viewM.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="toolbarM.html">Suivant</a></p>
+<h1><a name="cmdGrid"></a>2.12.1 Fenêtre Grille</h1>
+<p>
+La boîte de dialogue <strong>Grille (Grid)</strong>, affichée par <strong>Modifier la grille (Change Grid)</strong> du menu Affichage (View) (<a href="viewM.html#viewM"> Section 2.12 </a>), spécifie l'origine, l'angle et autres paramètres de la grille aimantée. La grille aimantée contrôle la position du curseur pendant le dessin de <strong>Curve (Courbe)</strong> (<a href="cmdCurve.html#cmdCurve">Section 2.1.2</a>), 
+<strong>Cercle (Circle)</strong>. (<a href="cmdCircle.html#cmdCircle">Section 2.1.1</a>), 
+<strong>Modifier (Modify)</strong> (<a href="cmdModify.html#cmdModify">Section 2.2.7</a>), 
+<strong>Droite (Straight)</strong> (<a href="cmdStraight.html#cmdStraight">Section 2.1.6</a>), 
+<strong>Dessin d'une ligne (Line Drawing)</strong> (<a href = "cmdDraw.html%20 # cmdDraw ">Section 2.3</a>) et <strong>ponts tournants</strong> (<a href="cmdTurntable.html#cmdTurntable">Section 2.1.9</a>).
+</p>
+<p>
+<img src="png.d/grid_fr.png">
+</p>
+<p>
+La boîte de dialogue <strong>Grille (Grid)</strong> contient des commandes qui affectent les lignes horizontale et verticale de la grille magnétique. Chaque dimension peut être contrôlée indépendamment.
+</p>
+<dl><dd>
+La valeur <strong>Espacement (Spacing)</strong> spécifie la distance entre les principales lignes de la grille, qui sont dessinées sous forme de lignes continues dans la présentation.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+La valeur <strong>Divisions</strong> ajoute les lignes secondaires de la grille  entre les lignes principales de cette  grille, qui sont dessinées sous la forme d'une série de points sur la présentation. Spécifier une valeur de 0 ou 1 en tant que valeur de division supprime les lignes secondaires de la grille.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+La grille peut être activée ou désactivée dans chaque dimension via la case à cocher <strong>Activer (Enable)</strong>.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Les coordonnées <strong>X</strong> et <strong>Y</strong> correspondent au point d'ancrage des axes X et Y. Les valeurs par défaut de <strong>X</strong> et de <strong>Y</strong> sont égales à zéro (0). Si vous saisissez une valeur de un pour <strong>X</strong>, la grille principale du dessin se décale d'une unité vers la gauche. Si vous entrez une valeur de deux, elle sera décalée de deux unités, etc. L'axe <strong>Y</strong> est affecté de la même manière, sauf que la grille se déplace vers le bas plutôt que vers la gauche.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Les valeurs négatives peuvent être utilisées pour les valeurs X et Y. Si tel est le cas, la grille principale se déplacera vers la droite pour l'axe X et vers le haut pour l'axe Y.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+La coordonnée A se rapporte à l'angle de rotation de la grille. La valeur par défaut pour cette coordonnée est zéro. Si vous entrez une valeur supérieure à 0 et inférieure à 90, la grille principale tournera dans le sens des aiguilles d'une montre en fonction du nombre de degrés entré. Si vous entrez une valeur négative, la grille tournera dans le sens inverse des aiguilles d'une montre.
+</dd>
+</dl>
+<p>
+L'origine et l'angle de la grille peuvent être ajustés directement ou en faisant glisser le plan. <em>Left+Drag</em> déplace l'origine de la grille et <em>Right+Drag</em> fait pivoter la grille. <em>Maj+clic droit</em> (<a href="cmdAcclKeys.html#cmdAcclKeys">Section 3.4</a>) affiche un menu contextuel permettant la rotation de la grille selon différents angles prédéfinis.
+</p>
+<p>
+Le dessin de la grille aimantée est contrôlé par la case à cocher <strong>Show (Afficher)</strong>. De même, si la mise en page est zoomée (<a href="cmdZoom.html#cmdZoom">Section 2.12.3</a>), il est possible que les lignes secondaires et principales de la grille soient trop rapprochées pour être tracées. La distance minimale en pixels entre les lignes de la grille est contrôlée par la valeur <strong>Min Grid Spacing (Espacement de la grille)</strong> dans <strong>Options>Préférences</strong> (<a href="cmdPref.html#cmdPref">Section 2.10.7</a>).
+</p>
+<p>
+<strong>Remarque :</strong> sur les ordinateurs lents dessiner la grille peut prendre beaucoup de temps. Vous pouvez améliorer les performances en sélectionnant une valeur plus grande pour <strong>Min Grid Spacing</strong>.
+</p>
+<p>
+<img src="png.d/bgsnap.png"> <strong>Boutons Grille (Grid Buttons)</strong> dans la barre d'outils (<a href="mainW.html#mainW">Section 3.1</a>) peuvent être utilisé pour activer/désactiver et pour afficher/masquer la grille magnétique.
+</p>
+<hr>
+
+<hr><address></address></body>
+</html>

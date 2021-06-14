@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Car Inventory</title>
+<link rel="previous" href="manageM.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="cmdCarpart.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="manageM.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="cmdCarpart.html">Suivant</a></p>
+<h1><a name="cmdCarinv"></a>2.9.1 Inventaire des véhicules (Car Inventory)</h1>
+<p>
+Cette boîte de dialogue permet de gérer votre liste de voitures et de locomotives.
+</p>
+<p>
+<img src="png.d/carinv_fr.png">
+</p>
+<p>
+La partie centrale de cette boîte de dialogue contient une liste détaillée de chaque voiture et locomotive de votre inventaire. Vous pouvez trier la liste sur différentes colonnes en sélectionnant leurs noms dans les <strong>Listes déroulantes</strong> en haut de la boîte de dialogue. La largeur des colonnes peut être ajustée avec <em>Gauche+Glisser</em> sur les lignes entre les titres de colonne.
+</p>
+<p>
+Les voitures sont positionnées sur le plan à l'aide de la commande <strong>Trains (Run Trains)</strong> (<a href="cmdTrain.html#cmdTrain">Section 2.9.8</a>).
+</p>
+<p>
+Le bouton <strong>Rechercher (Find)</strong> centre la <strong>fenêtre principale</strong> (<a href="mainW.html#mainW">Section 3.1</a>) sur la voiture sélectionnée. Ce bouton est activé uniquement pour les voitures qui se trouvent sur le plan (indiqué sur le <strong>Plan</strong> dans la colonne Emplacement). Si la voiture est sur une voie cachée avec le <strong>Trains sur une voie cachée</strong> (<a href="cmdDisplay.html#cmdDisplay">Section 2.10.3</a>) qui est défini comme <strong>Masqué (Hide)</strong>, alors la voiture (et toutes les voitures accrochées) sont rendues visibles.
+</p>
+<p>
+Le bouton <strong>Editer (Edit)</strong> appelle la boîte de dialogue <strong>Mettre à jour le véhicule</strong> (<a href="cmdCarpart.html#cmdCarpart">Section 2.9.1.1</a>) pour modifier la voiture sélectionnée. Ce bouton est désactivé si plus d'une voiture (ou aucune) est sélectionnée ou si la voiture sélectionnée est sur le plan.
+</p>
+<p>
+Le bouton <strong>Ajouter (Add)</strong> permet d'ajouter une nouvelle voiture. Reportez-vous à la <a href="faqsPrototype.html#faqsPrototype">Section A.3</a> si une erreur se produit lors de la tentative d'ajout à cette liste d'inventaire.
+</p>
+<p>
+Le bouton <strong>Effacer (Delete)</strong> supprime les voitures sélectionnées de votre inventaire. Ce bouton est désactivé si l'une des voitures sélectionnées se trouve sur le plan.
+</p>
+<p>
+Les boutons <strong>Importation</strong> et <strong>Exporter</strong> lisent et écrivent dans un fichier <em>Comma-Separated-Value (CSV)</em>. Ce format de fichier peut être lu et écrit par de nombreuses applications. Il peut être utilisé pour transférer des données d'inventaire de voiture entre différentes applications. Ce fichier contient les colonnes suivantes (les quatre premières sont obligatoires lors de l'importation) :
+</p>
+<dl><dd>
+<em>Scale</em> - exemple : HO, HOn3, N, O etc
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<em>Manufacturer</em> et <em>Partno</em>
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<em>Prototype</em> - exemple : GP40
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<em>Index</em> - un identifiant numérique unique (optionnel)
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<em>Roadname</em>, <em>Repmark</em> et <em>Number</em> - exemple : Burlington Northern, BN, 1234
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<em>Type</em> - entrez l'un des éléments suivants :
+<ul><li>
+10101(Diesel),
+</li>
+<li>
+10201(Steam),
+</li>
+<li>
+10301(Electric),
+</li>
+<li>
+30100(Freight),
+</li>
+<li>
+50100(Passenger),
+</li>
+<li>
+70100(M-O-W) ou;
+</li>
+<li>
+90100(Other)
+</li>
+</ul>
+
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<em>Options</em> - 2 (Locomotives), 4 (Body Mounted Couplers)
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<em>CarLength</em>, <em>CarWidth</em>, <em>CoupledLength</em> and <em>TruckCenter</em> - dimensions des voitures en pouces
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<em>Color</em> - codé comme (Red * 65535 + Green * 256 + Blue)
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<em>PurchPrice</em>, <em>CurrPrice</em>, <em>PurchDate</em> et <em>ServiceDate</em> - valeurs numériques
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<em>Condition</em> - entrez l'un des éléments suivants :
+<ul><li>
+100(Mint),
+</li>
+<li>
+80(Excellent),
+</li>
+<li>
+60(Good),
+</li>
+<li>
+40(Fair),
+</li>
+<li>
+20(Poor) or;
+</li>
+<li>
+0(N/A)
+</li>
+</ul>
+
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<em>Notes</em> - texte de forme libre
+</dd>
+</dl>
+<p>
+Le bouton <strong>Liste</strong> crée un fichier texte répertoriant votre inventaire.
+</p>
+<hr>
+<ul>
+<li><a href="cmdCarpart.html#cmdCarpart">2.9.1.1 <strong>Boite de dialogue nom de véhicule</strong></a></li>
+<li><a href="carpart.html#carpart">2.9.1.2 <strong>Boite de dialogue Eléments de Véhicule</strong></a></li>
+<li><a href="carprototype.html#carprototype">2.9.1.3 <strong>Boite de dialogue prototype de Véhicule</strong></a></li>
+</ul>
+
+<hr><address></address></body>
+</html>

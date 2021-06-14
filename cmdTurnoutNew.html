@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Turnout Designer</title>
+<link rel="previous" href="cmdTrain.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="cmdRefreshSpecial.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="cmdTrain.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="cmdRefreshSpecial.html">Suivant</a></p>
+<h1><a name="cmdTurnoutNew"></a>2.9.9 Conception d'aiguillage (Turnout Designer)</h1>
+<p>
+<strong>Conception d'aiguillage</strong> vous permet de créer de nouveaux aiguillages et de nouvelles voies.
+</p>
+<p>
+<img src="png.d/mmanageturnoutdesign_fr.png">
+</p>
+<p>
+Le sous-menu Conception d'aiguillage (Turnout Designer) est illustré ci-dessus. Comme le montre ce sous-menu, un certain nombre de boîtes de dialogue sont disponibles pour la création de composants d'aiguillage et de sections personnalisées. De nouvelles sections de voies et d'aiguillage sont ajoutées aux prototypes (<a href="cmdCustmgm.html#cmdCustmgm">section 2.9.2</a>) et à Aiguillages (<a href="cmdTurnout.html#cmdTurnout">section2.1.8 </a>) grâce à <strong>Conception d'aiguillage</strong>.
+</p>
+<p>
+La boîte de dialogue suivante est destinée à un aiguillage normal.
+</p>
+<p>
+<img src="png.d/turndes_fr.png">
+</p>
+<p>
+Chaque boîte de dialogue affiche un diagramme d'aiguillage et des champs pour saisir les dimensions. Les dimensions doivent être aussi précises que possible. Les différents types de dimensions sont :
+</p>
+<dl><dd>
+<strong>Longueur (Length)</strong> - mesurée de la base de l'aiguillage à la ligne médiane à la fin de celui-ci. La longueur est mesurée parallèlement de la ligne médiane de l'aiguillage à sa voie déviée. Pour les voies se terminant sur une courbe (comme le bras courbe d'un aiguillage normal), mesurez la distance entre la base et chaque rail et calculez la moyenne des valeurs.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<strong>Ecart (Offset)</strong> - mesuré à partir de la ligne médiane de la voie déviée de l'aiguillage jusqu'à la ligne médiane de la voie directe.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<strong>Angle</strong> - angle en fin d'aiguillage à la ligne médiane de la voie déviée de l'aiguillage. Cet angle peut être différent de l'angle du <em>Coeur (Frog)</em> de l'aiguillage si les rails se courbent au-delà du <em>Coeur</em>. Le groupe de boutons radio <strong>N°#|Degrés</strong> détermine si la valeur est exprimée en numéro de coeur ou en degrés. Le numéro de coeur est le rapport entre la longueur et la largeur du coeur de l'aiguillage.  
+<p>
+<img src="png.d/frognumber_fr.png">
+</p>
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<strong>Fabricant (Manufacturer)</strong> - nom du fabricant 
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<strong>Description</strong> - description de l'aiguillage, y compris la taille et le numéro de code du rail, par exemple, 'Left Hand #4'. Ces informations sont affichées lorsque vous placez le pointeur de la souris sur le symbole correspondant sur la <strong>Barre d'outils</strong>. Par conséquent, vous devez vous assurer que les données saisies ici sont utiles pour trouver l'aiguillage correct.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<strong>#</strong> - numéro de pièce, par exemple, '999-123'.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<strong>Largeur de ballast (Roadbed Width)</strong> - si elle est supérieure à l'écartement de la voie, des lignes sont tracées le long des bords de l'aiguillage pour représenter le ballast joint disponible sur certains types de section de voie et d'aiguillages.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<strong>Epaisseur de trait (Line Widt)</strong> : largeur des traits de lignes de ballast, mesurée en pixels lorsque l'échelle du dessin du plan (<a href="viewM.html#viewM">Section 2.12</a>) est de 1:1.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<strong>Couleur (Color)</strong> - couleur des lignes de ballast.
+</dd>
+</dl>
+<p>
+
+</p>
+<p>
+La hauteur du rail (<em>Code</em>) peut être ajoutée au <strong>Fabricant (Manufacturer)</strong>, par exemple, Peco-55 ou à la <strong>Description</strong>, par exemple, droit moyen code 55
+</p>
+<p>
+L'échelle correspond à l'échelle courante de la <strong>Scale Drop Down List</strong> de la boîte de dialogue <strong>Layout</strong> (<a href="cmdLayout.html#cmdLayout">Section 2.10.6</a>).
+</p>
+<p>
+<strong>Fabricant (Manufacturer)</strong>, <strong>Description</strong> et <strong>Référence (#) (Part Number)</strong> constituent l'intitulé de l'aiguillage. Ces valeurs sont utilisées dans le menu <strong>Aiguillages (Turnout Selection dialog)</strong> (<a href="cmdTurnout.html#cmdTurnout">Section 2.1.8</a>) et dans la <strong>Nomenclature (Parts Lis)</strong> ( <a href="cmdEnum.html#cmdEnum">Section 2.9.6</a>). Pour les aiguillages normaux et courbes, il existe des <strong>descriptions</strong> et des <strong>Références (Part Numbers)</strong> pour les aiguillages droit et gauche.
+</p>
+<p>
+Le bouton <strong>Imprimer (Print)</strong> permet d'imprimer un diagramme de l'aiguillage en taille réelle . Vous pouvez l'utiliser pour vérifier vos dimensions et apporter les modifications requises. Vous devez vous attendre à faire plusieurs impressions à mesure que vous affinez vos dimensions.
+</p>
+<p>
+Le bouton <strong>OK</strong> termine la conception. Le nouvel aiguillage est ajouté à la liste dans la boîte de dialogue <strong>Aiguillages</strong>. Les données d'aiguillage sont enregistrées dans le fichier <code>xtrkcad.cus</code> (<a href="directories.html#directories">Section 1.9</a>) pour la prochaine utilisation de <em>XTrackCAD</em>. svp, envisagez de partager ces informations avec d'autres personnes, via les adresses en ligne. Vous pouvez modifier les paramètres ou le titre des conceptions existantes à l'aide de la boîte de dialogue <strong>Matériels prototypes (Custom Management)</strong> (<a href="cmdCustmgm.html#cmdCustmgm">Section 2.9.2</a>).
+</p>
+<p>
+Le bouton <strong>Annuler (Cancel)</strong> ferme la boîte de dialogue <strong>Conception d'aiguillage (Turnout Designer)</strong>.
+</p>
+<p>
+<em>Conseils pour créer <a name="i0"></a>un design d'aiguillage</em>
+</p>
+<ul><li>
+Il est préférable de commencer par marquer les points limites de l'aiguillage sur un morceau de papier. Dessinez la voie déviée de l'aiguillage (essayez d'attacher une section droite) et mesurez l'angle. Le nombre du coeur (angle) est plus faciles à calculer.
+</li>
+</ul>
+<p>
+
+</p>
+<ul><li>
+Entrez vos données et appuyez sur <strong>Imprimer</strong> si vous disposez d'une imprimante précise. Vérifiez les dimensions de l'aiguillage par rapport à l'impression et faites les ajustements nécessaires. Concentrez-vous d'abord sur les longueurs et les décalages, puis ajustez les angles.
+</li>
+</ul>
+<p>
+
+</p>
+<ul><li>
+L'aiguillage qui en résulte est approximatif. En particulier, les courbes ne seront pas correctes, mais ce n'est pas important pour placer les aiguillages.
+</li>
+</ul>
+<p>
+
+</p>
+<ul><li>
+La commande "Grouper" (<a href="cmdGroup.html#cmdGroup"> Section 2.9.4 </a>) peut être utilisée pour ajouter des détails esthétiques aux définitions d'un <strong>aiguillage</strong>.
+</li>
+</ul>
+<hr>
+
+<hr><address></address></body>
+</html>

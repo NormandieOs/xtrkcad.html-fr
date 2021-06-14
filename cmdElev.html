@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Elevation</title>
+<link rel="previous" href="cmdConnect.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="computeElevations.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="cmdConnect.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="computeElevations.html">Suivant</a></p>
+<h1><a name="cmdElev"></a>2.2.4 Elévation</h1>
+<p>
+<img src="png.d/belev.png">
+</p>
+<p>
+La commande <strong>Elevation</strong> modifie l'altitude des bouts de voie. Après avoir ouvert la boîte de dialogue "Elévation", vous pouvez cliquer sur un bout de voie du plan pour définir ses propriétés d'élévation. Un gros point rouge indique alors le bout sur lequel vous travaillez, les choix de la fenêtre "Elévation" sont dégrisés et deviennent paramétrables.</p>
+<p>
+<img src="png.d/celev_fr.png">
+</p>
+<p>
+Un bout de voie peut avoir l'un des types d'élévation suivants:
+</p>
+<p>
+
+</p>
+<ul><li>
+<strong>Aucun (None)</strong> - aucune élévation définie.
+</li>
+<li>
+<strong>Défini(e) (Defined)</strong> - une altitude définie à une hauteur spécifiée.
+</li>
+<li>
+<strong>Caché (Hidden)</strong> - une altitude définie mais non affichée sur la mise en page.
+</li>
+<li>
+<strong>Calculé (Computed)</strong> - la hauteur est basée sur la hauteur des voisins les plus proches.
+</li>
+<li>
+<strong>Pente (Grade)</strong> - la pente est basée sur la hauteur des voisins les plus proches.
+</li>
+<li>
+<strong>Gare (Station)</strong> - attribue un nom au bout.
+</li>
+<li>
+<strong>Ignoré (Ignored)</strong> - le bout n'est pas pris en compte dans les calculs.
+</li>
+</ul>
+<p>
+<strong> Remarque </strong>: vous ne pouvez attribuer qu'un seul de ces attributs à un bout. Par exemple, un point de terminaison ne peut pas être défini à la fois comme une pente et une station.
+</p>
+<p>
+Lorsqu'un <em>clic gauche</em> sélectionne un bout du réseau, il est mis en surbrillance par un gros point rouge et son type d'élévation ainsi que ses valeurs sont affichés dans la boîte de dialogue.
+</p>
+<p>
+De plus, les bouts <strong> Elévation définie </strong> sont indiqués sur la présentation par des points dorés. Les bouts <strong> Elévation ignorée </strong> sont indiqués par des points bleus.
+</p>
+<p>
+<em> Maj + clic gauche </em> segmente la voie au point spécifié et ajoute un point d'altitude.
+</p>
+<p>
+La pente au niveau  du bout spécifié est affichée à côté du bouton radio <strong>Grade (pente)</strong>. Pour les bouts <strong> Elévation définie </strong>, la pente de chaque côté du bout est affichée.
+</p>
+<p>
+Les bouts de voie avec une <strong>élévation définie</strong> sont utilisés pour spécifier des hauteurs fixes de bouts de voie. En règle générale, il s'agit là de changement de pente où les dégagements doivent être maintenus. Les marqueurs d'élévation et de pente <strong>Calculés (Computed)</strong> peuvent être placés entre les bouts de voie d'élévation définie. Ces valeurs ne sont pas entrées directement mais sont calculées de manière dynamique en fonction des <strong> élévations définies </strong> des voies connectées. Cela permet d'étiqueter les élévations aux points d'extrémité intermédiaires sans avoir à entrer des valeurs spécifiques. Les marqueurs <strong>calculés</strong> automatiquement peuvent également être placés entre un point <strong>d'élévation défini</strong> et le bout d'une voie.
+</p>
+<p>
+Les <strong> stations </strong> sont utilisées pour fournir des informations sur la commande Profil (<a href="cmdProfile.html#cmdProfile"> Section 2.2.11 </a>).
+</p>
+<p>
+Toutes les étiquettes <strong> Elevation </strong> y compris <strong> Pente (Grade)</strong> et <strong>Gare (Station)</strong> sont dessinées sur le plan dans des cadres. Ceux-ci peuvent être déplacés par la commande <strong>Déplacement du cadre (Move Description)</strong> (<a href="cmdMoveLabel.html#cmdMoveLabel"> Section 2.2.9 </a>). En outre, les libellés <strong>Pente (Grade)</strong> comportent une flèche indiquant la position haute.
+</p>
+<hr>
+
+<ul>
+<li><a href="computeElevations.html#computeElevations">2.2.4.1 Calcul des élévations dynamiques</a></li>
+</ul>
+
+<hr><address></address></body>
+</html>

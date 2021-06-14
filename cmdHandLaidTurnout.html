@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Hand-laid Turnouts</title>
+<link rel="previous" href="cmdCurve.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="cmdHelix.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="cmdCurve.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="cmdHelix.html">Suivant</a></p>
+<h1><a name="cmdHandLaidTurnout"></a>2.1.3 Aiguillage de conception libre</h1>
+<p>
+<img src="png.d/bhndldto.png">
+</p>
+<p>
+Les aiguillages peuvent être créés en indiquant 3 valeurs: 
+</p>
+<ul><li>
+La position du <em>coeur (Frog)</em>
+</li>
+<li>
+L'angle du <em>coeur (Frog)</em> (le numéro du coeur)
+</li>
+<li>
+La position des <em>extrémités (Points)</em>
+</li>
+</ul>
+<p><img src="png.d/frognumber_fr.png">
+... numéro de coeur.
+<p>
+Commencez par sélectionner la position du coeur  (<a href="generalTerms.html#generalTerms">Section B.2</a>) sur une voie existante, puis faites <em>glisser</em> pour spécifier l'angle du coeur. L'angle en degrés et le numéro équivalent du coeur sont affichés dans la barre d'état. Lorsque vous relâchez, la ligne indiquant l'angle saute sur un côté de la voie pour vous montrer la ligne médiane du nouveau segment d'aiguillage que vous projetez de créer.
+</p>
+<p>
+Cliquez et étirez ensuite avec la souris pour définr l'extrémité (<a href="generalTerms.html#generalTerms">Section B.2</a>) de l'aiguillage côté pointe de coeur. Pendant que vous étirez, les voies de l'aiguillage se dessinent. Quand vous relachez, l'appareil de voie est créé. Par la suite, on peut utiliser la fonction "Modifier" pour ajuster la longueur des extrémités.
+</p>
+<p>
+Vous ne pouvez pas placer un <em>coeur</em> ou des extrémités sur un aiguillage standard, un cercle ou une helicoïde. Cependant, vous pouvez créer des aiguillages de conception libre qui se chevauchent.
+</p>
+<p>
+Des contraintes existent pour définir les <em>bouts de voie</em> par rapport au <em>coeur</em>. Vous ne pouvez pas les placer trop près du <em>coeur</em>. Quand vous positionnez un appareil de conception libre sur une voie courbe, vous pouvez obtenir des résultats surprenants, en particulier quand vous placez des <em>bouts de voie</em> loin du <em>coeur</em>. Essayez alors de modifier l'angle du <em>coeur</em> pour obtenir un meilleur résultat.
+</p>
+<p>
+Note : Le dessin est une approximation pour montrer les <em>bouts de voie</em> et le <em>coeur</em>. Les éléments de voie considérés (par <em>XTrkCad</em>) comme l'aiguillage de conception libre sont des éléments de voie courts allant des <em>extrémités</em> jusqu'au <em>coeur</em> de l'appareil. D'autres segments de voie sont crées entre les <em>extrémités</em> et le <em>coeur</em> et un court élement droit est créé après du <em>coeur</em>. Ces autres segments sont indépendants de l'appareil et peuvent être enlevés ou modifiés, même si ce n'est probablement pas une bonne idée. 
+</p>
+<hr>
+
+<hr><address></address></body>
+</html>

@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Printing</title>
+<link rel="previous" href="cmdPrmfile.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="printSetup.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="cmdPrmfile.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="printSetup.html">Suivant</a></p>
+<h1><a name="cmdPrint"></a>2.5.6 <a name="i0"></a>Impression (Printing)</h1>
+<p>
+La commande <strong>Imprimer (Print)</strong> (<strong>Fichier>Imprimer</strong>) permet d'imprimer tout ou partie du plan.
+</p>
+<p>
+Lorsque la commande <strong>Imprimer</strong> est sélectionnée, une grille représentant chaque page imprimable est dessinée sur le plan. Les pages peuvent être sélectionnées ou pas pour l'impression en plaçant la souris sur une section de la grille et en cliquant sur le bouton gauche de la souris.
+</p>
+<p>
+<img src="png.d/print_fr.png">
+</p>
+<p>
+La boîte de dialogue <strong>Imprimer</strong> contient plusieurs zones de contrôle :
+</p>
+<dl><dt>
+La taille de chaque page est contrôlée par :
+</dt>
+<dd>
+<strong>Echelle (Scale)</strong> - Jusqu'à 1:1.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<strong>Largeur, Hauteur (Width, Height)</strong> - taille à l'échelle de chaque page. Les valeurs pour la <strong>Largeur</strong> et la <strong>Hauteur</strong> peuvent être entrées manuellement, en remplaçant les valeurs maximales. Les valeurs supérieures à la taille de la page multipliées par l' <em>Echelle</em> ne peuvent pas être entrées.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<strong>Max</strong> - définit la largeur et la hauteur maximum pour une impression à l'<em>Échelle</em>.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<strong>Copi écran (Snap Shot)</strong> - ajuste les <em>échelle</em>, <em>Origine</em> et <em>Angle</em> pour produire une reproduction d'une page du plan.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<strong>Format</strong> - Portrait ou paysage.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dt>
+L'ordre d'impression des pages est contrôlé par l'option <strong>Ordre d'impression (Print Order)</strong>.
+</dt>
+<dd>
+Par rapport à la grille d'impression :
+<dl><dd>
+L'ordre <strong>normal</strong> est les Colonnes d'abord, de haut en bas, de gauche à droite.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+L'ordre <strong>Inversé</strong> est avec les Lignes en premier, de gauche à droite, de bas en haut.
+</dd>
+</dl>
+
+</dd>
+</dl>
+<p>
+Que les voies soient imprimées avec une ou deux lignes (représentant la ligne centrale ou les rails) dépend de l'<strong>Echelle d'impression</strong>. Si cette valeur est inférieure ou égale à deux fois la boîte de dialogue dans "Options>Affichage>Echelle pour 2 voies" (<a href="cmdDisplay.html#cmdDisplay">Section 2.10.3</a>), les voies sont dessinées avec deux lignes. Cela correspond à la manière dont les voies sont dessinées dans la fenêtre principale, ajustées pour tenir compte de la résolution supérieure de la plupart des imprimantes. À 1:1, les voies sont également dessinées avec une ligne centrale.
+</p>
+<dl><dt>
+Autres options:
+</dt>
+<dd>
+<strong>Données d'ingénierie (Engineering Data)</strong> - affiche le cartouche au bas de l'impression (titre, utilisateur, date et autres informations).
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<strong>Impression sans marge (Ignore Page Margins)</strong> - utilise la taille de la page physique. Cela permet aux impressions de se terminer sans rognage.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<strong>Imprimer les marques de repérage (Print Registration Marks)</strong> - à l'échelle 1:1, imprime des marqueurs d'emplacement tous les 3 "(ou 10 cm). Cette option est activée uniquement à 1:1. C'est utile pour aligner plusieurs pages imprimées à des angles différents.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<strong>Imprimer la grille magnétique (Print Snap Grid)</strong> - si la grille d'alignement (<a href="cmdGrid.html#cmdGrid">Section 2.12.1</a>) est visible, elle peut être dessinée sur l'impression. Cette option est activée uniquement si la <em>Grille d'alignement</em> est visible.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<strong>Imprimer les règles (Print Rulers)</strong> - imprimer des règles sur tous les bords de la page. Cette option est activée uniquement si l'<strong>Angle</strong> est à <em>0.000</em>.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<strong>Imprimer la ligne centrale en dessous de l'échelle 1:1 (Print centerline below Scale 1:1)</strong> - ligne de pointillée au centre de la voie/du ballast. Cette ligne sera toujours imprimée à l'échelle 1:1, mais cette option l'imprimera à des échelles plus petites. Cette option est désactivée si les voies sont dessinées avec une seule ligne (au lieu de deux).
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<strong>Imprimer le contour du ballast (Print Roadbed Outline)</strong> - lignes représentant le ballast. Le ballast sera imprimé si la <em>largeur</em> est supérieure à l'écartement de la voie. Remarque : cette option est particulièrement utile à 1:1. Cette option est désactivée si les voies sont dessinées avec une seule ligne (au lieu de deux).
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dt>
+L'orientation de la grille d'impression est contrôlée par :
+</dt>
+<dd>
+<strong>X</strong> - Coordonnée X
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<strong>Y</strong> - Coordonnée Y
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<strong>Angle</strong> - de la grille.
+</dd>
+</dl>
+<p>
+Ces valeurs peuvent être définies directement ou en faisant glisser le plan. <em>Maj+Bouton gauche+glisser</em> déplace la grille et <em>Maj+Bouton droit+glisser</em> fait pivoter la grille. Le bouton <strong>Reset</strong> permet de réinitialiser les valeurs à 0.
+</p>
+<p>
+Le bouton <strong>Imprimer (Print)</strong> permet d'imprimer les pages sélectionnées et de fermer la boîte de dialogue <strong>Imprimer</strong>. En outre, il n'est activé que lorsque vous avez sélectionné certaines pages à imprimer !
+</p>
+<p>
+Le bouton <strong>Configuration (Setup)</strong> appelle le menu de Configuration de l'imprimante (<a href="printSetup.html#printSetup">Section 2.5.7</a>).
+</p>
+<p>
+Le bouton <strong>Effacer (Clear)</strong> désélectionne toutes les pages. 
+</p>
+<p>
+<em>Conseils d'utilisation :</em>
+</p>
+<p>
+Utilisez le bouton <strong>Copie écran (Snapshot)</strong> pour définir l'échelle, l'orientation de l'impression d'une page et sa mise en page. Cochez également <strong>Données d'ingénierie (Engineering Data)</strong> pour ajouter le titre du plan, l'échelle et d'autres données pour un résumé.
+</p>
+<p>
+Utilisez <strong>Calques (Layers)</strong> (<a href="cmdLayer.html#cmdLayer">Section 2.9.5</a>) pour contrôler les voies visibles (et imprimées). Placez des plans de travail, des paysages ou des voies différentes dans des calques distincts et masquez ceux avec lesquels vous ne travaillez pas.
+</p>
+<p>
+Pour transférer le dessin sur le plan sans imprimer en 1:1, affichez la grille d'alignement (<a href="cmdGrid.html#cmdGrid">Section 2.12.1</a>) et orientez-la en fonction de votre pièce ou de votre plan de table.
+</p>
+<p>
+Activez la case à cocher <strong>Imprimer la grille magnétique (Print Snap Grid)</strong> et utilisez la grille imprimée pour transférer les mesures sur votre plan de travail. Vous souhaiterez peut-être modifier la couleur (<a href="cmdRgbcolor.html#cmdRgbcolor">section 2.10.1</a>) de la <strong>Grille magnétique</strong> pour la rendre plus visible sur l'impression.
+</p>
+<p>
+Lorsque vous imprimez plusieurs pages, vous pouvez cocher <strong>Impression sans marge (Ignore Page Margins)</strong> afin de pouvoir placer les pages les unes à côté des autres. Les voies s'aligneront correctement sans couper ou superposer les pages. Remarque : en fonction de votre imprimante, il y aura une marge non imprimable autour du bord de la page.
+</p>
+<p>
+Si vous imprimez à 1:1 pour un transfert direct du ballast, activez <strong>Imprimer le contour du ballast (Print Roadbed Outline)</strong> et définissez la <strong>Largeur</strong> pour afficher les lignes permettant d'effectuer des coupes.
+</p>
+<p>
+Si vous imprimez des bandes sous des angles différents selon un angle 1:1 (pour suivre les traces autour d'une courbe), cochez <em>Imprimer les marques de repérage (Print Registration Marks)</em> pour pouvoir aligner les bandes séparées.
+</p>
+<hr>
+
+<hr><address></address></body>
+</html>

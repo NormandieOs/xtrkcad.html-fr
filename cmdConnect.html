@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Connect Tracks</title>
+<link rel="previous" href="clrElev.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="cmdElev.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="clrElev.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="cmdElev.html">Suivant</a></p>
+<h1><a name="cmdConnect"></a>2.2.3 Connecter des voies</h1>
+<p>
+<img src="png.d/bconnect.png">
+</p>
+<p>
+La commande <em>modifier>Connecter des voies (Change>Connect To Track)</em> est fréquemment utilisée avec des <em>Coupons de voies (Sectional Track)</em>. Mais il peut être utile de rattacher une voie ordinaire qui a été déconnectée ou sectionnée.
+</p>
+<p>
+Il y a trois modes,
+</p>
+<p>
+
+</p>
+<ul><li>
+un <strong> clic gauche</strong>, sur une voie proche d'une extrémité déconnectée qui est suivi d'une seconde extrémité déconnectée sur une autre voie, va essayer de joindre les deux bouts de voies.
+</li>
+<li>
+Un clic <strong>Maj + Gauche</strong> sur une voie connectée resserera les voies "Tighten Tracks" en déplaçant les autres voies connectées vers elle afin de réduire les petites différences de distance ou d'angle.
+</li>
+<li>
+en sélectionnant un ensemble de voies suivi d'un <strong> clic droit </strong>, vous serez invité à confirmer que toutes les voies sélectionnées avec des bouts non connectés doivent être reliées au bout non connecté de la voie sélectionnée voisine. Ce mode permet de reconnecter toute une partie de réseau après "Select-All".
+</li>
+</ul>
+<p>
+<strong> Remarques sur le mode deux voies (two track mode) : </strong>il arrive parfois que des segments de section de voie ne s'alignent pas exactement, en particulier lors de la création de figures en 8 ou de voies d'évitement. Lors de la mise en place de la voie réelle, vous pouvez compenser cela en ajustant chaque voie individuellement pour fournir un peu de jeu. Cette commande simule ce processus.
+</p>
+<p>
+Cliquez sur le bout de chaque voie que vous essayez de connecter. XtrkCAD déplacera légèrement les voies pour tenter de combler l'écart. Si l'écart est trop grand, la connexion échouera. Si cela se produit, essayez d'utiliser d'autres coupons de voie dans votre réseau.
+</p>
+<p>
+<em> XTrackCAD </em> ajuste les positions des voies connectées à des voies précédentes jusqu'à une voie avec plus de deux connexions. Voir la démo pour plus de détails.
+</p>
+<p>
+Si l'une des voies sélectionnées (ou les deux) a une longueur ajustable (telle que la voie ajustable Kato n° 20-050), la longueur de la voie est modifiée pour combler le vide.
+</p>
+<p>
+Vous pouvez annuler l'effet de la commande <strong>Connect</strong> en scindant (<a href="splitDisconnect.html#splitDisconnect"> Section 2.2.16.1 </a>) la piste pour la déconnecter, puis en utilisant la commande <em>Maj+Clic gauche</em> <strong>Connect</strong> sur les bouts non connectés pour resserrer les connexions entre les voies.
+</p>
+<hr>
+
+<hr><address></address></body>
+</html>

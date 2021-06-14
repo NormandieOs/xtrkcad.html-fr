@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Car Item Dialog</title>
+<link rel="previous" href="cmdCarinv.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="carpart.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="cmdCarinv.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="carpart.html">Suivant</a></p>
+<h1><a name="cmdCarpart"></a>2.9.1.1 Boite de dialogue nom de véhicule (Car Item Dialog)</h1>
+<p>
+Cette boîte de dialogue est appelée à partir des boîtes de dialogue <strong>Inventaire des véhicules (Car Inventory)</strong> (<a href="cmdCarinv.html#cmdCarinv">Section 2.9.1</a>) et <strong>Gestion personnalisée (Custom Management)</strong> (<a href="cmdCustmgm.html#cmdCustmgm">Section 2.9.2</a>) .
+</p>
+<p>
+La boîte de dialogue peut être affichée de trois manières différentes et permet de créer ou de modifier les <strong>noms de véhicules</strong>, les <strong>pièces de véhicules</strong> ou les <strong>prototypes</strong>.
+</p>
+<p>
+Le bouton <strong>Ajouter (Add)</strong> crée une nouvelle définition. La boîte de dialogue reste ouverte pour vous permettre d'entrer plusieurs définitions. Vous pouvez <strong>Fermer (Close)</strong> la boîte de dialogue lorsque vous avez terminé. Si vous modifiez une définition existante, le bouton <strong>Ajouter</strong> sera remplacé par le bouton <strong>Mise à jour (Update)</strong> qui met à jour la définition sélectionnée et ferme la boîte de dialogue.
+</p>
+<p>
+<img src="png.d/caritem_2_fr.png"><br/> <img src="png.d/caritem_maj_fr.png">
+</p>
+<p>
+Le bouton <strong>Nouveau (New)</strong> de la boîte de dialogue <strong>Nouveau véhicule</strong> appelle la boîte de dialogue <strong>Pièces</strong> ou <strong>Prototype</strong> que vous pouvez utiliser pour créer nouvelles définitions de pièces ou de prototypes pour vos voitures. Le bouton <strong>Nouveau</strong> de la boîte de dialogue <strong>Pièces</strong> appelle la boîte de dialogue <strong>Prototype</strong>.
+</p>
+<p>
+<strong>Boîte de dialogue de noms de voiture</strong>
+</p>
+<p>
+<img src="png.d/caritem_fr.png">
+</p>
+<p>
+La boîte de dialogue contient :
+</p>
+<dl><dd>
+Une <strong>description du véhicule </strong> contenant les listes <strong>Fabricant (Manufacturer)</strong>, <strong>Prototype</strong> et <strong>Référence (Part Number)</strong>, utilisées pour sélectionner une pièce détachée d'une voiture. La liste <strong>Fabricant (Manufacturer)</strong> contient des entrées <strong>Personnalisée (Custom)</strong> et <strong>Inconnue (Unknown)</strong> pour des pièces de voitures spéciales. Pour ces entrées, vous pouvez saisir les champs <strong>Référence N° (Part Number)</strong> et <strong>Description</strong>.
+<p>
+<p>
+<img src="png.d/caritem_perso_fr.png">
+</p>
+</p>
+<ul><li>
+Si le fabricant de votre voiture ne figure pas dans la liste <strong>Manufacturer (Fabricant)</strong>, vous pouvez entrer le nouveau nom. De même, si la <strong>Part (Pièce)</strong> ne figure pas dans la liste, vous pouvez entrer un nouveau numéro de pièce. La nouvelle pièce sera ajoutée à la liste des pièces détachées auto (<a href="cmdCustmgm.html#cmdCustmgm">Section 2.9.2</a>).
+</li>
+</ul>
+
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Les boutons radio <strong>Mode</strong> vous permettent de choisir entre les contrôles <strong>Information</strong> décrits ici ou les contrôles <strong>Personnaliser (Customize)</strong> décrits dans la section suivante. Utilisez l'option <strong>Personnaliser (Customize)</strong> pour modifier le nom, le numéro ou la couleur de la voie si vous avez repeint la voiture ou en ajuster les dimensions.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Informations détaillées sur chaque élément de véhicule, telles que <strong>Index</strong>, <strong>Prix (Price)</strong> et <strong>État (Condition)</strong>, <strong>Dates</strong> et <strong>Remarques (Notes)</strong>. La valeur <strong>Index</strong> doit être unique pour tous les éléments de véhicule.
+<p>
+
+</p>
+<ul><li>
+Pour entrer plusieurs <strong>Nouveaux véhicules (New Cars)</strong>, vous pouvez définir le champ <strong>Quantité (Quantity)</strong> sur une valeur supérieure à un. Le groupe de boutons radio <strong>Numéros (Numbers)</strong> indique si les numéros du nouveau véhicule seront séquentiels (tels que 1234, 1235, ...) ou répétés.
+</li>
+</ul>
+
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<strong>Une ligne de message</strong> contiendra des instructions si des champs doivent être renseignés.
+</dd>
+</dl>
+<hr>
+
+<hr><address></address></body>
+</html>

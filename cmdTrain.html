@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Train</title>
+<link rel="previous" href="cmdPricelist.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="cmdTurnoutNew.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="cmdPricelist.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="cmdTurnoutNew.html">Suivant</a></p>
+<h1><a name="cmdTrain"></a>2.9.8 Faire circuler des trains</h1>
+<p>
+<img src="png.d/btrain.png"> Le bouton <strong>Mode trains (Run Trains)</strong> ou la commande <strong>Gérer>Train</strong> vous permettent de placer et de faire rouler des trains sur le plan.
+</p>
+<p>
+<a name="i0"></a> Ces commandes modifient la barre d'outils et la Barre rapide. La plupart des boutons de la barre d'outils sont remplacés par les boutons <em>Pause/Go Trains</em> et <em>Exit</em>. Le bouton <em>Pause/Go Trains</em> permet de basculer entre la pause de tous les trains et l'autorisation de les faire rouler. Le bouton <em>Exit</em> met fin à la simulation de train et retourne en mode Création de plan.
+</p>
+<p>
+<img src="png.d/trainbar.png">
+</p>
+<p>
+
+</p>
+<dl><dt>
+<em>Sélection de nouveaux véhicules</em>
+</dt>
+<dd>
+Le Barre rapide contient les véhicules et locomotives qui n'ont pas été placés sur le plan. Les véhicules sont créées et gérées à l'aide de la boîte de dialogue "Inventaire des véhicules" (<a href="cmdCarinv.html#cmdCarinv">Section 2.9.1</a>).
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Chaque élément de la Barre rapide peut représenter un groupe de véhicules. Les véhicules peuvent être regroupés par prototype, fabricant et/ou référence. Ils peuvent également être répertoriés en tant qu'éléments individuels de véhicule. Ce groupe est contrôlé par la liste déroulante <em>Etiquettes des véhicules</em> à l'écran (<a href="cmdDisplay.html#cmdDisplay">Section 2.10.3</a>).
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Pour placer un véhicule, sélectionnez-le dans la barre rapide. Si la barre de raccourcis affiche les véhicules par groupes (et non comme des éléments de véhicules individuels), une liste déroulante s'affiche dans la barre d'état (<a href="mainW.html#mainW">Section 3.1</a>) contenant les informations suivantes : Articles individuels de véhicule dans ce groupe.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Si vous n'affichez pas la barre de raccourcis, le bouton <em>Nouveau véhicule</em> (<img src="png.d/bnewcar.png">) sera affiché dans la barre d'outils. Appuyez sur ce bouton pour afficher la liste déroulante dans la barre d'état (<a href="mainW.html#mainW">Section 3.1</a>) contenant tous vos articles de véhicules qui n'ont pas encore été placés sur le plan.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<img src="png.d/trainsimulator.png">
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<img src="png.d/statusbartrain.png">
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<img src="png.d/carlist.png">
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dt>
+<em>Placer des véhicules</em>
+</dt>
+<dd>
+Une fois que vous avez sélectionné un nouveau véhicule ou un véhicule existant sur le plan, vous pouvez le positionner en utilisant la souris pour la faire glisser autour du plan. Si le véhicule est couplé à d'autres véhicules, l'ensemble de ceux-ci est déplacé. Si vous placez le véhicule sur une voie, ce véhicule (et les autres véhicules couplés) sera alignée le long de la voie.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<strong>Remarque :</strong> si vous déplacez les voies mais pas les véhicules (ou l'inverse) à l'aide des commandes Déplacer (Move) (<a href="cmdMove.html#cmdMove">Section 2.2.8</a>) ou Faire pivoter (Rotate) (<a href="cmdRotate.html#cmdRotate"> Section 2.2.14 </a>), les véhicules ne resteront pas attachés aux voies. Si les wagons sont rapprochés d'une voie, ils seront alignés lors de l'appel suivant de la commande <em>Trains</em>.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dt>
+<em>Atteler des véhicules</em>
+</dt>
+<dd>
+Si un véhicule est déplacé le long d'une voie vers un autre véhicule, les véhicules seront couplés ensemble.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dt>
+<em>Dételer des véhicules</em>
+</dt>
+<dd>
+Pour dételer les véhicules, cliquez avec le bouton droit de la souris sur les véhicules, puis sélectionnez <em>Découpler</em> dans le menu déroulant.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<img src="png.d/mtrainmanagement_fr.png">
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dt>
+<em>Changer d'orientation un train ou un véhicule</em>
+</dt>
+<dd>
+Vous pouvez inverser l'orientation d'un train ou d'un véhicule en faisant un clic droit sur l'objet approprié, puis en sélectionnant <em>Inverser un Train</em> ou <em>Inverser un véhicule</em> dans le menu contextuel.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dt>
+<em>Enlever un train ou un véhicule du plan</em>
+</dt>
+<dd>
+Pour supprimer un train ou un véhicule du plan, cliquez avec le bouton droit de la souris sur l'objet approprié, puis sélectionnez <em>Supprimer le Train</ em> ou <em>Supprimer un véhicule</ em> dans le menu contextuel.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dt>
+<em>Trains</em>
+</dt>
+<dd>
+Un train est constitué d'une ou de plusieurs locomotives couplées à d'autres véhicules. Une locomotive sera la <em>MU Master</em> du train. Vous pouvez modifier la <em>MU Master</em> en cliquant avec le bouton droit de la souris sur une locomotive et en sélectionnant <em>MU Master</em> dans le menu contextuel. La <em>MU Master</em> est dessiné avec une lumière jaune fixe indiquant la direction de déplacement. Si un train est divisé par un dételage entre locomotives, deux trains seront créés, chacun avec sa propre <em>MU Master</ em>.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dt>
+<em>Panneau de commande</em>
+</dt>
+<dd>
+<img src="png.d/trainctrl_fr.png">
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+La boîte de dialogue <em>Panneau de commande (Train Control)</em> permet de définir la vitesse et la direction des trains. La boîte de dialogue contient une liste de trains (listés par leur locomotive <em>MU Master</em>). Dans la liste, avant chaque train il y a un cercle rouge (indiquant que le train est arrêté) ou un cercle vert (indiquant que le train est en mouvement).
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+N'importe quel nombre de trains peut circuler, mais il peut être difficile d'en avoir trop.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Pour un train sélectionné, le Panneau de commande du train répertorie :
+<dl><dd>
+Etat du train : indique que le train est en mouvement, en pause ou le motif de son arrêt.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+La position du train (X,Y)
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Curseur contrôlant la vitesse du train en Miles par heure ou en kilomètres à l'heure à l'échelle .
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Le compteur kilométrique, qui mesure la distance totale parcourue par le train, il peut être réinitialisé à "0" en appuyant sur la touche <em>0</em>.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Le bouton <em>Chercher</em> qui positionne la fenêtre principale (<a href="mainW.html#mainW">Section 3.1 </a>) pour afficher le train. Si le paramètre Train cachés et masqués sur une voie (hidden and Hide Trains) et Masquer les trains sur une voie cachée (Hide Trains on Hidden Track) (<a href="cmdDisplay.html#cmdDisplay">Section 2.10.3</a>) est <em>Activé</em>, le train sera alors rendu visible jusqu'à son prochain déplacement.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Le bouton <em>Suivre (Follow)</em> qui permet à la fenêtre principale (<a href="mainW.html#mainW">Section 3.1</a>) de suivre le train à mesure qu'il se déplace. La bascule <em>Suivre</em> ne peut être définie que sur un train à la fois. Elle est effacée si vous appuyez sur le bouton <em>Chercher</em> ou si vous déplacez manuellement le plan principal.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Le bouton <em>Inversion automatique (Auto Reverse)</em> permet au train de changer de direction lorsqu'il atteint la fin d'une piste.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Le groupe de boutons radio Direction qui contrôle la direction marche (<em>Avant</em> ou <em>Arrière</em>) du train.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Le bouton <em>Stop</em> qui force le train à la vitesse "0".
+</dd>
+</dl>
+
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dt>
+<em>Train en exploitation</em>
+</dt>
+<dd>
+Une fois qu'un train est en mouvement, il continuera à se déplacer jusqu'à ce qu'il soit arrêté manuellement, qu'il atteigne la fin de la voie ou qu'un aiguillage soit ouvert. Si le train «heurte» d'autres véhicules, ceux-ci seront couplés au train. Si la vitesse des trains dépasse la vitesse maximale de couplage (<a href="cmdPref.html#cmdPref">Section 2.10.7</a>), le train déraillerra et devra être replacé manuellement sur la voie.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Si deux trains sont couplés, l'une des deux <em>MU Masters</em> sera choisie comme <em>MU Master</em> pour la combinaison de train.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Le mouvement de tous les trains peut être suspendu en cliquant sur le bouton <em>Go/Stop</em> dans la barre d'outils de la fenêtre principale. Appuyer sur la touche d'<em>Échapement</em> a le même effet que de cliquer sur le bouton <em>Stop</em>. Cela vous permet de définir les positions d'aiguillages ou d'effectuer d'autres modifications. Lorsque la commande Train est activée, le bouton <em>Go/Stop</em> se trouve sur la position <em>Stop</em> et vous devez cliquer dessus avant le démarrage des trains.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dt>
+<em>Aiguillages et Ponts tournants</em>
+</dt>
+<dd>
+Les positions d'aiguillage sont indiquées par des lignes rouges reliant leurs points d'extrémité à travers eux. Les trains suivront cette route à travers l'aiguillage. Si vous faites un <em>Maj+clic gauche</em> dans l'aiguillage, la position suivante sera utilisée et la ligne rouge modifiée pour indiquer la nouvelle position.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Vous pouvez faire pivoter les ponts tournants en utilisant <em>Maj+clic gauche</em> sur le point de terminaison vers lequel vous souhaitez déplacer la platine. Pour faire pivoter le pont-tournant de 180 °, <em>Maj+clic gauche</em> sur le point de terminaison à nouveau.
+</dd>
+</dl>
+<hr>
+
+<hr><address></address></body>
+</html>

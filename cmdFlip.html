@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Flip</title>
+<link rel="previous" href="computeElevations.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="cmdJoin.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="computeElevations.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="cmdJoin.html">Suivant</a></p>
+<h1><a name="cmdFlip"></a>2.2.5 Flip (effet miroir)</h1>
+<p>
+<img src="png.d/bflip.png">
+</p>
+<p>
+Cette commande retourne ou fait tourner les objets sélectionnés, par un effet miroir efficace.
+</p>
+<ol><li>
+Avant de faire appel à cette commande, visualisez comment les objets sélectionnés seront retournés et déterminez où tracer une ligne de référence qui servira d'axe ou de point d'ancrage pour les objets retournés.
+<p>
+</p>
+<dl><dd>
+<img src="png.d/flip1.png"> <img src="png.d/flip2.png">
+</dd>
+</dl>
+<p>
+</p>
+</li>
+<li>
+Appelez la commande <strong>Flip</strong>, puis <em>Clic-gauche</em> à l'une des extrémités de la ligne de référence visualisée à l'étape précédente. En maintenant le bouton <em>gauche</em> de la souris enfoncé, <em>faites glisser</em> le curseur sur le plan pour former la ligne visualisée précédemment.
+<p>
+</p>
+<dl><dd>
+<img src="png.d/flip3.png"> <img src="png.d/flip4.png">
+</dd>
+</dl>
+<p>
+</p>
+</li>
+<li>
+Une fois qu'une ligne de longueur et d'orientation désirée apparaît, relâchez le bouton de la souris. Le ou les objets sélectionnés basculeront alors autour de la ligne comme s'il s'agissait d'un miroir.</li>
+</ol>
+<p>
+Étant donné que les objets retournés sont mis en miroir, les étiquettes d'aiguillages peuvent être modifiées au cours du processus de retournement. Les branchements à droite deviendront les branchements à gauche et vice versa. Tel est le cas dans cet exemple.
+</p>
+<p>
+Certains aiguillages, tels qu'un Y, trois voies ou croisement, sont symétriques et les étiquettes de ce type d'objets ne sont pas modifiées. Si un changement d'étiquette est nécessaire, les <strong>fichiers de paramètres</strong> actuellement chargés (<a href="cmdPrmfile.html#cmdPrmfile"> Section 2.5.5 </a>) recherchent un indicateur correspondant à celui inversé. Si aucune correspondance n'est trouvée, l'étiquette de l'aiguille porte le préfixe <strong>Retourné (Flipped)</strong>. La commande <strong>Propriétés</strong> (<a href="cmdDescribe.html#cmdDescribe"> Section 2.2.12 </a>) permet de modifier l'étiquette de ces aiguillages.
+</p>
+<hr>
+
+<hr><address></address></body>
+</html>
