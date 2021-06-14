@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Easements with Fixed Sharpness</title>
+<link rel="previous" href="EasementsCornu.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="EasementsSectional.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="EasementsCornu.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="EasementsSectional.html">Suivant</a></p>
+<h1><a name="EasementsTraditional"></a>2.10.4.2 <a name="i0"></a>Voie de transition et erreurs de raccords</h1>
+<p>
+Les valeurs <strong>R</strong>, <strong>X</strong> et <strong>L</strong> sont en lecture seule. Elles sont définies à l'aide des boutons radio ou du champ <strong>Value</strong> qui peut être réglé sur 0 (pas d'easement) ou entre 0-21 (easement la plus précise) et 100 (easement la plus large).
+</p>
+<p>
+Ces valeurs indiquent le cas le plus défavorable pour joindre une voie droite avec une courbe de rayon <strong>R</strong>. Les deux voies sont désaxées par le décalage <strong>X</strong>, tandis que la courbe d'easement s'étend sur <strong>L/2</strong> pouces ou centimètres de chaque côté des extrémités.
+</p>
+<p>
+La formule utilisée pour dessiner des "easements" non-Cornu est la suivante :</p>
+<pre><code>         x = l * l * l / (6 * <b>R</b> * <b>L</b>)
+         r = <b>L</b> * <b>R</b>/l
+</code></pre>
+<p>
+où
+</p>
+<ul><li>
+<strong>l</strong> est la distance utile le long de la tangente à l'easement.
+</li>
+<li>
+<strong>R</strong> est le rayon final de l'easement.
+</li>
+<li>
+<strong>L</strong> est la longueur totale de l'easement le long de la tangente.
+</li>
+<li>
+<strong>x</strong> est le décalage par rapport à la tangente à <strong>l</strong>.
+</li>
+<li>
+<strong>r</strong> est le rayon de la courbe d'easement à <strong>l</strong>.
+</li>
+</ul>
+<p>
+Le bouton d'easement (<img src="png.d/beasement.png">) dans la fenêtre principale (<a href="mainW.html#mainW">Section 3.1</a>) modifie son libellé pour indiquer le valeur de l'easement.
+</p>
+<p>
+Les diagrammes suivants illustrent les valeurs <strong>R</strong>, <strong>X</strong> et <strong>L</strong>, ainsi que la courbe d'easement résultante.
+</p>
+<p>
+<img src="png.d/easeex1.png">
+</p>
+<p>
+<img src="png.d/easeex2.png">
+</p>
+<p>
+Si des courbes dont le rayon est supérieur à <strong>R</strong> ou si deux courbes (qui se plient dans la même direction) sont en cours de connexion, la courbe d'assouplissement sera plus courte et le décalage plus petit. Si le décalage calculé est petit, aucun assouplissement n'est généré.
+</p>
+<p>
+Une voie courbe qui se courbe dans une direction puis dans la direction opposée est une <em>courbe en S</em>. Cela générera l'assouplissement dans le pire des cas, c'est-à-dire deux courbes d'assouplissement placées bout à bout.</p>
+<p>
+Reportez-vous aux instructions de la <a href="EasementsSectional.html#EasementsSectional">section 2.10.4.3</a> lors de l'utilisation d'une voie fragmentée.
+</p>
+<hr>
+
+<hr><address></address></body>
+</html>

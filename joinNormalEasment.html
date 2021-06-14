@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Join with Normal Easement</title>
+<link rel="previous" href="joinTrackCurve.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="joinCornu.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="joinTrackCurve.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="joinCornu.html">Suivant</a></p>
+<h1><a name="joinNormalEasment"></a>2.2.6.2 Raccorder avec une courbe de transition (Easement) normale</h1>
+<p>
+
+</p>
+<dl><dd>
+<img src="png.d/joincrv1.png">
+</dd>
+</dl>
+<p>
+
+</p>
+<ol><li>
+Démarrez le processus de jointure en cliquant sur le bouton Jointure (<img src="png.d/bjoin.png">).
+<p>
+
+</p>
+<p>
+<img src="png.d/joincrv2.png">
+</p>
+<p>
+
+</p>
+
+</li>
+<li>
+Faites un <em>Clic-gauche (Left-Click)</em> à l'extrémité de l'une des deux voies à joindre. Un point rouge apparaît pour rappeler quelle voie a été sélectionnée.
+<p>
+
+</p>
+<p>
+<img src="png.d/joincrv4.png">
+</p>
+<p>
+
+</p>
+
+</li>
+<li>
+Puis faites un <em>Clic-gauche</em> sur l'extrémité de l'autre voie tout en maintenant le bouton de la souris enfoncé, puis déplacez le pointeur de la souris en faisant apparaitre une voie reliant les deux extrémités. Si la voie apparaît en noir (et que vous êtes satisfait de la courbe dessinée), relâchez le bouton de la souris.
+<p>
+
+</p>
+<p>
+<img src="png.d/joincrv3.png">
+</p>
+<p>
+
+</p>
+
+</li>
+<li>
+Si la voie apparaît en rouge, cela signifie que <em>XTrackCAD</em> ne peut pas déterminer comment connecter la première voie à la seconde. Si cela se produit, tout en maintenant le bouton gauche de la souris enfoncé, faites glisser la souris vers la première voie jusqu'à ce que la voie à connecter apparaisse en noir. Si la voie à connecter reste rouge, faites glisser la souris dans le sens opposé jusqu'à ce que la voie à connecter devienne noire. Lorsque la voie à connecter devient noire, relâchez le bouton de la souris pour finaliser la commande <em>Raccorder</ em>.
+<p>
+
+</p>
+<p>
+<img src="png.d/joincrv5.png">
+</p>
+<p>
+
+</p>
+
+</li>
+</ol>
+<p>
+Dans tout ce qui précède, la forme exacte de la courbe peut être ajustée en faisant glisser la souris tout en maintenant le bouton gauche de la souris enfoncé.
+</p>
+<p>
+Parfois, peu importe où vous déplacez la souris, la courbe reste rouge et les voies ne peuvent pas être connectées. Cela signifie que la courbe résultante est plus étroite que le rayon de trace minimal défini dans la boîte de dialogue <em>Préférences</em> (<a href="cmdPref.html#cmdPref"> Section 2.10.7 </a>). Si vous le souhaitez, vous pouvez définir ce paramètre à partir de la <em>boîte de dialogue Préférences</em> à l'aide de la sélection de menu <strong> Options>Préférences</strong> pour ouvrir la boîte de dialogue. Si la modification du rayon de voie minimal n'est pas une option souhaitée, il sera nécessaire de déplacer l'une des voies que vous essayez de raccorder.
+</p>
+<p>
+Vous constaterez peut-être aussi que <em>XTrackCAD</em> ne créera pas la courbe de connexion dans la forme exacte souhaitée. Si cela se produit, il peut être nécessaire de déplacer l'un des points d'extrémité ou de tracer une courbe partielle (ou une ligne droite) et de réessayer.
+</p>
+<p>
+Si cette option est activée, les calculs (<a href="cmdEasement.html#cmdEasement"> Section 2.10.4 </a>) seront automatiquement générées entre des voies de rayons différents. Lorsque vous utilisez des calculs automatiques (easement), le rayon minimum est spécifié dans la boîte de dialogue <em>Courbe de transition</ em>. Il n'est pas possible de joindre des voies dont le rayon est inférieur à ce rayon et le rayon de la voie de connexion doit être supérieur au rayon minimum.
+</p>
+<p>
+Si des erreurs se produisent lors d'une jonction de voies (comme en vous déplaçant au-delà de la fin d'une voie ou si vous utilisez une courbe dont le rayon est inférieur au rayon Easement), la voie jointe sera dessinée en rouge (couleur par défaut des erreurs Voie non conforme "Exception Track". Voir <a href="cmdRgbcolor.html#cmdRgbcolor"> Section 2.10.1 </a> pour plus de détails). Cette coloration sert d'indication visuelle pour une voie de connexion qui ne respecte pas les paramètres spécifiés minimum (<a href="cmdPref.html#cmdPref"> Section 2.10.7 </a>).
+</p>
+<p>
+Toutes les voies créées lors de la commande <strong>Raccorder (Join)</strong> ont les propriétés qui suivent héritées de la première voie : état sélectionné, état masqué, échelle, écartement des voies et couches.
+</p>
+<p>
+Un raccordement peut être fait vers ou depuis un cercle (<a href="cmdCircle.html#cmdCircle"> Section 2.1.1 </a>) de voie. Si vous associez une voie à un cercle, le cercle sera converti en voie incurvée.
+</p>
+<p>
+Pour plus de détails : 
+</p>
+<dl><dd>
+Utilisation de voies flexibles droites pour raccorder des segments de voie, reportez-vous à <a href="joinTrackStraight.html#joinTrackStraight">Section 2.2.6.4</a>.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Déplacer un segment de voie pour en raccorder un autre, voir <a href="joinTrackMove.html#joinTrackMove">Section 2.2.6.5</a>.
+</dd>
+</dl>
+
+<hr><address></address></body>
+</html>

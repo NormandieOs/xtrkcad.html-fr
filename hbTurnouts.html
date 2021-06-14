@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Turnouts</title>
+<link rel="previous" href="hbStructures.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="macroM.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="hbStructures.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="macroM.html">Suivant</a></p>
+<h1><a name="hbTurnouts"></a>2.7.2 Aiguillages (Turnouts)</h1>
+<p>
+Les <em>aiguillages</em> ont un point de terminaison actif (<a href="generalTerms.html#generalTerms">section B.2</a>), qui est le descripteur utilisé pour les positionner. Vous pouvez modifier le <em>point de terminaison actif</em> par un <em>Maj+clic gauche</em>, pour passer au point de terminaison suivant.
+</p>
+<p>
+Si vous <em>faites glisser</em> une aiguille sur une voie, le point de terminaison actif (<a href="generalTerms.html#generalTerms">Section B.2</a>) est aligné sur la voie sélectionnée. Sur une voie flexible, vous pouvez inverser l'aiguillage en déplaçant le curseur d'un côté à l'autre de l'axe de la voie. Sur un autre branchement, le nouveau branchement sera placé à l'extrémité la plus proche du curseur.
+</p>
+<p>
+<em>XTrackCAD</em> connectera automatiquement les points d'extrémité de l'aiguillage à toute autre voie sur laquelle ils sont alignés. Le nombre de points d'extrémité qui seront connectés est affiché dans la barre d'état, ainsi que le déplacement maximal entre ces points d'extrémité et les voies auxquelles ils seront connectés. <em>XTrackCAD</em> ajustera la position de l'aiguillage pour vous donner le meilleur moyen de le localiser. Vous pouvez annuler ce réglage en maintenant la touche <em>Maj</em> enfoncée tout en le <em>déplaçant</em>.
+</p>
+<p>
+<em> Droit+Glisser</em> (<a href="windowTerms.html#windowTerms">Section B.1</a>) peut être utilisé pour faire pivoter l'aiguillage sur le plan. <em>Maj+clic droit</em> (<a href="cmdAcclKeys.html#cmdAcclKeys">Section 3.4</a>) affiche un menu contextuel vous permettant de faire pivoter l'aiguille sous différents angles.
+</p>
+<p>
+Lorsque vous appuyez sur la touche <em>Espace</em>, l'aiguillage se positionne sur le plan. Toutes les voies alignées avec l'un des points d'extrémité de l'aiguillage seront automatiquement connectées à l'aiguillage. Si vous utilisez la commande Aiguillage (<a href="cmdTurnout.html#cmdTurnout">Section 2.1.8</a>), vous pouvez également cliquer sur le bouton <em>OK</em> de la boîte de dialogue.
+</p>
+<p>
+Si vous choisissez un autre aiguillage ou modifiez des commandes après avoir commencé à placer l'aiguille sur le plan, l'aiguillage sera créé comme s'il était attaché à une autre voie. Sinon, il sera supprimé.
+</p>
+<p>
+Si l'échelle de dessin est plus petite ou égale à "Echelle d'étiquette" (<a href="cmdDisplay.html#cmdDisplay">Section 2.10.3</a>), les aiguillages seront étiquetés avec leur description une fois dessinés. Les étiquettes individuelles peuvent être désactivées à l'aide de la commande "Déplacer l'étiquette" (<a href="cmdMoveLabel.html#cmdMoveLabel">Section 2.2.9</a>) ou désactiver toutes les étiquettes d'aiguillage à l'aide de la touche "Affichage" (<a href="cmdDisplay.html#cmdDisplay">Section 2.10.3</a>). De même, la longueur de toute voie Flex connectée sera indiquée à chaqu'une des extrémités.
+</p>
+<p>
+Reportez-vous à la <a href="cmdTurnout.html#cmdTurnout">Section 2.1.8</a> pour plus d'informations sur l'utilisation de la boîte de dialogue <em>Aiguillage</em>.
+</p>
+<hr>
+
+<hr><address></address></body>
+</html>

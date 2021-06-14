@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Computing Dynamic Elevations</title>
+<link rel="previous" href="cmdElev.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="cmdFlip.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="cmdElev.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="cmdFlip.html">Suivant</a></p>
+<h1><a name="computeElevations"></a>2.2.4.1 Calcul des élévations dynamiques</h1>
+<p>
+Les élévations des voies sont calculées selon les étapes qui suivent. Les couleurs répertoriées à chaque étape sont utilisées comme couleur d'arrière-plan des marqueurs d'élévation de voie (si elles sont activées (<a href="cmdDisplay.html#cmdDisplay">Section 2.10.3</a>)).
+</p>
+<ul><li>
+Entre toutes les élévations déjà définies (Defined Elevations) on calcule les chemins les plus courts. Un chemin s'arrête aux extrémités des rails ignorés ou définis. Sur ces chemins, l'élévation de tous les aiguillages avec plus de deux connexions est calculée comme étant l'élévation moyenne inversement pondérée par la distance le long des voies aux points d'élévation déjà définis <em>(Defined Elevations)</em> (<em>Bleu</em>).
+</li>
+</ul>
+<p>
+
+</p>
+<ul><li>
+L'élévation, des chemins les plus courts de toutes les autres voies, est calculée en fonction de la distance le long des voies des aiguillages calculés au premier raccord et/ou des points <em>Defined Elevations</em> (<em>Violet</em> ).
+</li>
+</ul>
+<p>
+
+</p>
+<ul><li>
+L'élévation des voies restantes est calculée en fonction de l'élévation moyenne des voies trouvées dans les deux premières étapes auxquelles elles sont connectées (directement ou indirectement),  inversement pondérées par la distance géométrique (<em>Or</em>).
+</li>
+</ul>
+<p>
+
+</p>
+<ul><li>
+Toutes les voies restantes non connectées à un point d'élévation déjà défini <em>Defined Elevation</em> n'ont pas d'élévation.
+</li>
+</ul>
+<p>
+Le calcul d'élévation est effectué de manière incrémentielle chaque fois que le réseau est modifié, pour que tous les niveaux restent synchronisés. Les performances du calcul sont affectées par l'emplacement des bouts de voie cotés avec des <em>Defined Elevations</em> et par le nombre de chemins qui les séparent. Placez les <em>Defined Elevations</em> aux points où les voies commencent à se ramifier (comme l'entrée d'un dépot ou aux extrémités d'une voie d'évitement). Utilisez également <em>Defined Elevations</em> pour fractionner le réseau en plusieurs zones afin que le recalcul ait moins de voies et de circuits à traiter.
+</p>
+<hr>
+
+<hr><address></address></body>
+</html>

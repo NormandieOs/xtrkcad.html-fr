@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Linux Installation</title>
+<link rel="previous" href="MSWinInstall.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="startSoftware.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="MSWinInstall.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="startSoftware.html">Suivant</a></p>
+<h1><a name="LinuxInstall"></a>1.5.2 <a name="i0"></a>Linux Installation</h1>
+<p>
+<em>XTrackCAD</em> pour LINUX est contenu dans une archive à extraction automatique (exécutable).
+</p>
+<ol><li>
+Installation à partir de l'archive auto-extractible.
+<dl><dd>
+Après le téléchargement, ouvrez une ligne de commande puis
+</dd>
+<dd>
+<code>./xtrkcad-setup-5.1.2a.i386.sh --prefix=/usr/local --exclude-subdir</code>
+</dd>
+<dd>
+Ça installera l'exécutable dans <em>/usr/local/bin</em>. Un répertoire nommé xtrkcad sera créé dans /usr/local/share et tous les fichiers y seront décompressés.
+</dd>
+</dl>
+
+</li>
+<li>
+Installation avec un paquet .rpm sous Fedora (pour mémoire Fedora fait partie de la famille Red Hat) :
+<dl><dd>
+Après le téléchargement, ouvrez une ligne de commande puis
+</dd>
+<dd>
+<code>dnf install /home/[chemin du paquet ...]/xtrkcad-setup-5.1.2a-1.x86_64.rpm</code>
+</dd>
+<dd>
+Ça installera l'exécutable dans <em>/usr/local/bin/xtrkcad/...</em> Un répertoire nommé xtrkcad sera créé dans <em>/usr/local/share/...</em>  et tous les fichiers y seront décompressés.
+</dd>
+<dd>
+La traduction en français du logiciel XtrkCAD sera installée dans <em>usr/local/share/locale/fr_FR/LC_MESSAGES/xtrkcad.mo</em>
+</dd>
+</dl>
+
+</li>
+
+</ol>
+<p>
+Si vous installez <em>XTrackCAD</em> dans un autre répertoire, définissez la variable d'environnement <code>XTRKCADLIB</code> pour qu'elle pointe vers ce répertoire.
+</p>
+
+<hr><address></address></body>
+</html>

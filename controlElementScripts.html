@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Control Element Scripts and the Model RR System's Dispatcher</title>
+<link rel="previous" href="generalTerms.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="MessagesandExplanations.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="generalTerms.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="lexique_en_fr.html">Suivant</a></p>
+<h1><a name="controlElementScripts"></a>B.3 Scripts de rétrosignalisation et régulation d'un système de modélisme ferroviaire
+</h1>
+<p>
+Remarques sur les scripts de rétrosignalisation et du programme de régulation de modélisme ferroviaire en mode OpenLCB :
+</p>
+<p>
+Lors de l'utilisation du programme de régulation en modélisme ferroviaire en mode OpenLCB (Open Local Control Bus) de la NMRA, pour créer des panneaux CTC, leurs identificateurs d'événement LCC peuvent être automatiquement renseignés à partir des informations du fichier XTrackCAD, à condition que la syntaxe appropriée soit respectée.
+</p>
+<p>
+Un identifiant d'événement LCC est un nombre de 64 bits, représenté par huit paires de chiffres hexadécimaux (0-9, a-f/A-F) séparés par des points (.). Chaque paire représente un octet de 8 bits de l'ID d'événement. Cet identifiant d'événement est soit produit par un capteur ou un élément logique, soit utilisé par une commande/un dispositif ou un élément logique.
+</p>
+<p>
+Pour les blocs, le script d'occupation contient une paire d'identificateurs d'événement LCC, séparés par un signe deux-points (:). Le premier identifiant d'événement LCC est produit par le détecteur de présence lorsque le train entre dans le bloc et le deuxième identifiant d'événement LCC est produit par le détecteur de présence lorsque le train quitte le bloc.
+</p>
+<p>
+Pour les commutations des moteurs, le script de détection des aiguilles contient une paire d'identificateurs d'événement LCC, séparés par le signe deux-points (:). Le premier identifiant d'événement LCC est produit par le capteur d'aiguilles lorsque les aiguilles sont alignées dans la position "normale" (généralement alignées sur la position principale) et le second identificateur d'événement LCC est généré par le capteur d'aiguilles lorsque les aiguilles sont alignées dans la position "inverse" (typiquement alignées sur l'éperon, c.a.d. la position déviée). Les scripts normal et inverse contiennent chacun un identifiant d'événement LCC de signal. Ces événements sont générés par le panneau CTC lorsque vous appuyez (cliquez) sur le bouton de commande du point de contrôle et sont reçus par le commutateur de moteur.
+</p>
+<p>
+Pour les signaux, le nom d'aspect est une liste séparée par des espaces de la couleur des signaux et le script d'aspect est un identifiant d'événement LCC utilisé pour produire cet aspect. L'identificateur d'événement LCC est vraisemblablement produit par un élément logique (probablement un groupe de mât dans un dispositif Tower-LCC ou similaire) ou un circuit de voie virtuelle dans un dispositif Tower-LCC ou similaire.
+</p>
+<hr>
+
+<hr><address></address></body>
+</html>
