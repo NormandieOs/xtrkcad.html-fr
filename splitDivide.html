@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Divide Track</title>
+<link rel="previous" href="splitDisconnect.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="splitBlockGap.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="splitDisconnect.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="splitBlockGap.html">Suivant</a></p>
+<h1><a name="splitDivide"></a>2.2.16.2 Fractionner une voie</h1>
+<p>
+Diviser une section de voie flexible en deux parties connectées :
+</p>
+<ol><li>
+Cliquez sur le bouton <strong>Segmentation de voie (Split)</strong> (<img src="png.d/bsplit.png">) pour activer la commande <strong>Fractionner</strong>.
+<p>
+
+</p>
+
+</li>
+<li>
+Placez le pointeur de la souris sur le point de la voie où elle doit être divisée, puis sur <em>Clic gauche</em>.
+<p>
+
+</p>
+
+</li>
+</ol>
+<dl><dd>
+Lorsque la commande <strong>Segmentation de voie (Split)</strong> est terminée, une liaison connectée apparaît dans la voie au point de sélection. Pour diviser et déconnecter en un point, exécutez la commande de suivi <strong>Segmentation de voie</strong> deux fois. La première commande divise la voie, la seconde la déconnecte.</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<img src="png.d/splitNotYet.png">
+</dd>
+<dd>
+<em>Voie avant le fractionnement</em>
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+<img src="png.d/splitConnect.png">
+</dd>
+<dd>
+<em>Voie aprés le fractionnement</em>
+</dd>
+</dl>
+<p>
+
+</p>
+<p>
+Il est impossible de créer une voie plus courte que la <em>longueur minimale de la voie</em> (<a href="cmdPref.html#cmdPref">Section 2.10.7</a>).
+</p>
+<p>
+Cette commande est utile pour placer des entrées de tunnel ou des points d'élévation (<a href="cmdElev.html#cmdElev">Section 2.2.4</a>) à des emplacements de voie spécifiques.
+</p>
+<p>
+Normalement, un aiguillage ne peut pas être divisé. Toutefois, si la touche <em>Maj</em> est maintenue lors de l'exécution de cette commande, l'aiguillage peut être <em>coupé</em>. Le <em>rognage</em> remplace la portion de voie entre la césure et le bout de l'aiguillage avec flex-track. Pour les aiguillages comportant plus d'un ensemble de points (<a href="generalTerms.html#generalTerms">section B.2</a>), tels qu'une jonction double (slip switch) ou une bretelle double (scissors crossover), un <em>ajustement</em> de point ne peut pas être sélectionné entre les <em>points</em> de l'aiguillage.
+</p>
+<p>
+Pour plus de détails :
+</p>
+<p>
+
+</p>
+<dl><dd>
+Pour déconnecter la jonction entre deux sections de voie, voir <a href="splitDisconnect.html#splitDisconnect">Section 2.2.16.1</a>.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dd>
+Pour créer des espaces vides au niveau d'une jointure existante, voir <a href="splitBlockGap.html#splitBlockGap">Section 2.2.16.3</a>.
+</dd>
+</dl>
+<hr>
+
+<hr><address></address></body>
+</html>

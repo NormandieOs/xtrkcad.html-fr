@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Start the Program</title>
+<link rel="previous" href="LinuxInstall.html">
+<link rel="ToC" href="contents.html">
+<link rel="index" href="IndexPage.html">
+<link rel="next" href="introQT.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="LinuxInstall.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="introQT.html">Suivant</a></p>
+<h1><a name="startSoftware"></a>1.6 <a name="i0"></a>Démarrer le programme</h1>
+<p>
+L'exécutable <em>XTrackCAD</em>  est nommé xtrkcad.exe sous Windows et xtrkcad sous Linux.
+</p>
+<p>
+<strong>Ligne de commande</strong>
+</p>
+<p>
+Sous Windows :
+</p>
+<pre><code>xtrkcad [/c config] [/v] [/l logfile] [/d logcontrol] fichier de mise en page
+</code></pre>
+<p>
+Sous Linux:
+</p>
+<pre><code>xtrkcad [-c config] [-v] [-l logfile] [-d logcontrol] fichier de mise en page
+</code></pre>
+<p>
+<strong>Paramètres de ligne de commande</strong>
+</p>
+<dl><dt>
+<code>c config</code>
+</dt>
+<dd>
+configuration à utiliser. Cela vous permet d’avoir plusieurs configurations distinctes (ex : fichiers de paramètres, options d’affichage).
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dt>
+<code>layoutfile</code>
+</dt>
+<dd>
+nom du fichier à charger pour la mise en page. Ce paramètre à la priorité sur l'option à reprendre avec le dernier plan (<a href="cmdPref.html#cmdPref">Section 2.10.7</a>).
+</dd>
+</dl>
+<p>
+<strong>Paramètres de débogage</strong>
+</p>
+<p>
+Les paramètres suivants sont destinés au débogage et intéressent principalement les développeurs.
+</p>
+<dl><dt>
+<code>v</code>
+</dt>
+<dd>
+verbose mode.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dt>
+<code>d logcontrol</code>
+</dt>
+<dd>
+spécifie la quantité de journalisation. L'argument logcontrol a le format logmodule <code>logmodule[=level]</code>. logmodule définit les fonctionnalités à consigner, le niveau facultatif spécifie le niveau de journalisation. Les valeurs par défaut sont qu'aucun module n'est consigné et loglevel est 1 si le paramètre logonctrol est omis.
+</dd>
+</dl>
+<p>
+
+</p>
+<dl><dt>
+<code>l logfile</code>
+</dt>
+<dd>
+set logfile, nécessaire uniquement avec l'option de débogage.
+</dd>
+</dl>
+
+<hr><address></address></body>
+</html>
