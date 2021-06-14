@@ -1,2 +1,2 @@
 # xtrkcad.html-fr
-Translation fr html for XTrkCAD
+Base Translation fr html for XTrkCAD version 5.1.2a
