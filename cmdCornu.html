@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Créer une voie de Cornu</title>
+<link rel="previous" href="cmdCurve.html">
+<link rel="ToC" href="contents.html">
+<link rel="next" href="cmdHandLaidTurnout.html">
+<link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
+<body>
+<p><a href="cmdBezier.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="cmdHandLaidTurnout.html">Suivant</a></p>
+<h1><a name="cmdCornu"></a>2.1.3 Créer une voie de Cornu</h1>
+<dl><dd>
+<img src="png.d/bcornu.png"> <code>Clic gauche</code> pour placer chaque point d'extrémité sur une extrémité de voie ouverte ou juste sur le tracé. Lors du déplacement vers le clic, si la <strong>Grille Magnetique</strong> est activée, une ancre s'affiche lorsque le curseur est proche d'un point d'extrémité ouvert. Ceci peut être inhibé avec <em>Alt</em>. Si le <strong>Grille Magnetique</strong> est désactivée, cela ne se produira que si <em>Alt</em> est maintenue.
+</dd>
+</dl>
+<p>
+<code>Gauche-glisser</code> si le point d'extrémité qui n'est pas sur une voie existante fait glisser l'angle d'extrémité de la nouvelle voie. Ceci est indiqué par l'ancrage de la Cornu.
+</p>
+<p>
+<img src="png.d/cornuendanchor_fr.png">
+</p>
+<p>
+L'ancre est uniquement dessinée pour les extrémités de la Cornu qui ne sont pas reliées à des voies existantes. Elle indique la position, la direction et le rayon de la voie et comporte des ancres permettant de modifier ces propriétés. Lorsque la Cornu est reliée à une voie, elle utilise les propriétés de l'extrémité de cette voie à la place. Les poignées des points d'ancrage sont dessinées à l'extérieur de l'extrémité de la voie de Cornu pour permettre d'éditer les broches de la voie elle-même. <code>Clic gauche</code> pour placer le deuxième point d'ancrage soit sur un point d'ancrage de la voie ou non. <code>Clic-Gauche-glisser</code> pour placer le deuxième angle d'extrémité comme le premier des points d'extrémité non connectés.
+</p>
+<p>
+Validez la courbe en appuyant sur <code>Entr</code>, ou rejetez-la avec <code>Esc</code>.
+</p>
+<p>
+Le rayon et l'angle de l'extrémité ouverte de la Cornu sélectionnée peuvent également être définis par des zones de saisie de texte dans la barre d'état.
+</p>
+<p>
+Lorsque l'un ou l'autre des points de fin est déplacé, il "s'accroche" à un point de fin ouvert des voies sous le curseur, sauf si <code>Maj</code> est maintenue. Vous ne pouvez alors déplacer le point de fin le long de cette voie que si elle est divisible, ou dans son prolongement. Une fois la nouvelle voie terminée, elle sera reliée à ces voies existantes.
+</p>
+<p>
+Les broches de voie de Cornu sont expliquées plus en détail dans <a href="joinCornu.html#joinCornu">Section 2.2.7.5</a> - elles obligent la courbe de Cornu à passer sans à-coups par leur position tout en satisfaisant aux conditions finales. Vous pouvez les placer en cliquant sur la Cornu et en sélectionnant, <em>Drag</em> pour les déplacer ou appuyez sur <em>Suppr</em> pour les supprimer.
+</p>
+<p>
+Si l'extrémité n'est pas connectée, une ancre permettra de régler l'angle et le rayon de l'extrémité par glissement. Au départ, le rayon d'extrémité est fixé à zéro et l'angle sera choisi de manière à créer une courbe lisse compte tenu de l'angle d'extrémité. La modification de l'angle d'extrémité avec l'ancre remet le rayon à zéro.
+</p>
+<p>
+
+</p>
+
+<hr><address></address></body>
+</html>
