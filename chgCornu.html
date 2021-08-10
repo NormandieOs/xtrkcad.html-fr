@@ -1,55 +1,86 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<title>Cornu Easements Modifying a Cornu</title>
-<link rel="previous" href="extendTrack.html">
+<meta charset="UTF-8">
+<title>Voie de transition Cornu modifiant une voie Cornu</title>
+<link rel="previous" href="polyModify.html">
 <link rel="ToC" href="contents.html">
 <link rel="index" href="IndexPage.html">
 <link rel="next" href="chgBezier.html">
 <link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
 <body>
-<p><a href="extendTrack.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="chgBezier.html">Suivant</a></p>
-<h1><a name="chgCornu"></a>2.2.7.5 <a name="i0"></a>Modifier une Cornu avec Cornu Easement</h1>
+<p><a href="polyModify.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="chgBezier.html">Suivant</a></p>	
+<h1><a name="chgCornu"></a>2.2.8.8 <a name="i0"></a>Voie de transition de Cornu modifiant une voie de Cornu</h1>
 <p>
-La spirale de Cornu (ou Clothoïde) est une courbe mathématique qui a la propriété d'avoir sa courbure (inverse du rayon) qui varie linéairement sur sa longueur. Etant donné qu'une Cornu est définie par sa position, son angle et son rayon, elle ne peut être modifiée directement qu'en faisant glisser une extrémité le long d'une voie.
+Comme une voie de Cornu est définie par la position, l'angle et le rayon de ses extrémités, elle ne peut être modifiée directement qu'en déplaçant un point d'extrémité le long d'une voie ou en modifiant ses conditions d'extrémité si elle n'est pas reliée à une autre voie. Elle peut également avoir ajouté des "Pins" qui contraignent la courbe à passer en douceur par un point.
 </p>
 <ol><li>
-Cliquez sur le bouton <strong>Modifie</strong> (<img src="png.d/bmodify.png">) pour activer la fonction <strong>Modifier</strong>.
+Cliquez sur le bouton <strong>Modifier</strong> (<img src="png.d/bmodify.png">) pour activer la fonction <strong>Modifier</strong>.
 <p>
 
 </p>
 
 </li>
 <li>
-Cliquez sur la voie Cornu. La fin de voie se transformera en rondeau (amis de la poèsie) ...
+Cliquez sur la voie Cornu. Les extrémités de la voie se transformeront en rondelles. Si d'autres Cornus sont connectés à l'une ou l'autre des extrémités, l'ensemble connecté sera modifiable en une Cornu avec des "Pins" intermédiaires aux connexions.
 <p>
 
 </p>
 
 </li>
 <li>
-Faites un <em>Clic gauche</em> sur l'extrémité puis un <em>gauche+glisser</em> pour déplacer l'extrémité le long de la voie connectée ou au-delà si vous souhaitez que cette voie soit étendue (mais cela ne fonctionne que dans le cas d'une Cornu).
+Un <em>Clic gauche</em> sur un point terminal et un <em>Glissé gauche</em> déplace le point terminal le long d'une voie connectée, ou au-delà si vous voulez que cette voie soit étendue. S'il n'y a pas de voie, l'extrémité est libre de se déplacer.
 <p>
 
 </p>
 
 </li>
 <li>
-Répétez l'opération avec l'autre extrémité si désiré
+Pour un point de fin non connecté, un <em>Clic gauche</em> sur les ancrages de rayon ou d'angle et un <em>Glissé gauche</em> permet de les ajuster.
 <p>
 
 </p>
 
 </li>
 <li>
-Une fois que vous êtes satisfait, appuyez sur la <em>Barre d'espacement</em> ou <em>Entrée</em>, ou pour annuler, appuyez sur <em>Échap</em>.
+<em>Clic gauche</em> d'une pin et <em>Glissé gauche</em> pour déplacer la pin et faire passer la courbe par elle.
+<p>
+
+</p>
+
+</li>
+<li>
+<em>Clic-Gauche</em> sur la voie où une Pin n'existe pas pour ajouter une Pin et <em>Glissé-Gauche</em> pour modifier la courbe afin de passer par un point défini.
+<p>
+
+</p>
+
+</li>
+<li>
+<em>Supprimer</em> pour supprimer la dernière pin sélectionnée, la courbe changera pour remplir les conditions de fin et passer par les pins restantes.
+<p>
+
+</p>
+
+</li>
+<li>
+Répétez l'opération avec l'autre extrémité ou les autres pins si vous le souhaitez
+<p>
+
+</p>
+
+</li>
+<li>
+Une fois que vous êtes satisfait, appuyez sur la barre d'espace <em> ou <em>Entr</em>, ou pour annuler, appuyez sur <em>Ech</em>.
 </li>
 </ol>
 <p>
-<strong>Remarque :</strong> vous pouvez également modifier une Cornu en déplaçant ou en faisant pivoter une voie connectée.
+<strong>Remarque :</strong> Si la commande Modifier contient des Pins, <em>barre d'espacement</em> ou <em>Entrée</em> produira un ensemble de cornu(s) connecté(s) relié(s) aux points des pins.
+</p>
+<p>
+<strong>Remarque :</strong> Une Cornu peut également être modifiée en déplaçant ou en faisant tourner une voie connectée.
 </p>
 <hr>
 
-<hr><address></address></body>
+</body>
 </html>
