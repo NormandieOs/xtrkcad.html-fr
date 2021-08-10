@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<title>Mouse Actions</title>
+<meta charset="UTF-8">
+<title>Actions de la souris</title>
 <link rel="previous" href="cmdView.html">
 <link rel="ToC" href="contents.html">
 <link rel="index" href="IndexPage.html">
@@ -10,76 +10,105 @@
 <link rel="stylesheet" type="text/css" href="xtrkcad_lin.css"></head>
 <body>
 <p><a href="cmdView.html">Précédent</a> | <a href="contents.html">Sommaire</a> | <a href="IndexPage.html">Index</a> | <a href="mouseBcmd.html">Suivant</a></p>
-<h1><a name="cmdAcclKeys"></a>3.4 <a name="i0"></a>Actions de la souris (Mouse Actions)</h1>
-<dl><dt>
-<em>XTrackCAD</em> utilise les boutons gauche et droit de la souris pour manipuler les voies et autres objets du plan. Leurs actions dépendent de chaque commande particulière mais en général :
-</dt>
-</dl>
+<h1><a name="cmdAcclKeys"></a>3.4 <a name="i0"></a>Actions de la souris</h1>
 <p>
-
-</p>
-<dl><dd>
-<em>Clic-gauche</em> - sélectionne un objet ou un bout de voie. 
-</dd>
-</dl>
-<p>
-
-</p>
-<dl><dd>
-<em>Clic-gauche+glisser</em> - modifie un objet, par exemple son extension. 
-</dd>
-</dl>
-<p>
-
-</p>
-<dl><dd>
-<em>Clic-droit</em> - affiche un menu contextuel de commandes.
-</dd>
-</dl>
-<p>
-
-</p>
-<dl><dd>
-<em>Shift+Clic-droit</em> - affiche un menu contextuel d'options de commande (pour certaines commandes).
-</dd>
-</dl>
-<p>
-
-</p>
-<dl><dd>
-<em>Tourner la roulette</em> - effectue un zoom avant ou arrière sur la zone de dessin.
-</dd>
-</dl>
-<p>
-
+<em>XTrackCAD</em> utilise les boutons gauche et droit de la souris pour manipuler les voies et autres objets sur le tracé. Leur signification dépend de la commande particulière :
 </p>
 <p>
-
+<em>Commande sélectionner</em>
+</p>
+<p>
+Les actions de la commande <em>Sélectionner</em> sont affectées par le mode sélectionné dans <strong>Options->Commande->Mode sélection</strong>. Remarque - Les objets d'un module de calque sont sélectionnés et désélectionnés en tant que groupe.
 </p>
 <dl><dt>
-Lors du déplacement et de la rotation (placement d'aiguillages et de structures, déplacement des grilles d'impression et d'aimantation, ...) :
+<em>Clic-gauche</em>
 </dt>
-</dl>
-<p>
-
-</p>
-<dl><dd>
-<em>(Clic-gauche+glisser)</em> - déplace les objets ou la grille.
+<dd>
+Mode Elément unique -> Sélectionne un objet à la fois, désélectionne les autres objets. Mode ajout d'un objet -> Ajoute les objets non sélectionnés, désélectionne si l'objet est déjà sélectionné. Si le clic se fait sur une zone sans objets et que <strong>Désélectionner tout</strong> est défini, tous les objets sont désélectionnés.
+</dd>
+<dt>
+<em>Maj+Clic-gauche</em>
+</dt>
+<dd>
+Sélectionne toutes les voies connectées depuis celle sur laquelle on a cliqué jusqu'à l'élément sélectionné suivant dans chaque direction.
+</dd>
+<dt>
+<em>Ctrl+Clic-gauche</em>
+</dt>
+<dd>
+Mode Elément unique  -> Ajoute un objet à la sélection, désélectionne si l'objet est déjà sélectionné. Mode Ajout d'un objet -> Sélectionne uniquement cet objet et désélectionne les autres objets. Si le clic se fait sur une zone sans objets et que <strong>Désélectionner tout</strong> est coché, tous les objets sont désélectionnés.
+</dd>
+<dt>
+<em>Double-Clic-gauche</em>
+</dt>
+<dd>
+Ouvre Modifier une Cornu et dessiner des objets autres que du texte, active le lien et les notes de document, sinon ouvre Décrire.
+</dd>
+<dt>
+<em>Gauche+glisser</em>
+</dt>
+<dd>
+Mode Elément unique -> Sélectionne tous les objets dans la zone élastique et désélectionne tous les autres. Ajouter à la sélection -> Ajoute des éléments dans la zone élastique.
+</dd>
+<dt>
+<em>Maj+Gauche+glisser</em>
+</dt>
+<dd>
+Déplace les objets sélectionnés s'ils se trouvent dans la zone sélectionnée, si les objets sélectionnés sont désactivés, comme le Gauche+glisser.
+</dd>
+<dt>
+<em>Ctrl+Gauche+glisser</em>
+</dt>
+<dd>
+Fait pivoter les objets sélectionnés s'ils se trouvent dans une zone sélectionnée, si les objets sélectionnés sont désactivés, comme le Gauche+glisser.
+</dd>
+<dt>
+<em>Clic-droit</em>
+</dt>
+<dd>
+Affiche un menu contextuel de commandes (dans les commandes Sélectionner, Déplacer, Modifier et Faire pivoter). Si une voie est sélectionnée, le menu comporte des opérations à effectuer, sinon, il comporte un menu contextuel de commandes.
+</dd>
+<dt>
+<em>Maj+Clic-droit</em>
+</dt>
+<dd>
+Affiche un menu contextuel de commandes. Affiche un menu contextuel autre que celui du clic droit.
+</dd>
+<dt>
+<em>Droit+glisser</em>
+</dt>
+<dd>
+Désélectionne tous les objets dans la zone élastique de l'ensemble actuel.
+</dd>
+<dt>
+<em>Molette de souris</em>
+</dt>
+<dd>
+Effectue un zoom avant et arrière sur la zone de dessin. Les ordinateurs modernes équipés de trackpads associent souvent ce geste à un glissement à deux doigts.
 </dd>
 </dl>
 <p>
-
+<em> Lors du déplacement et de la rotation </em> ( Placer les aiguillages et les structures, Déplacer les grilles d'impression et d'accrochage, ... ) :
 </p>
-<dl><dd>
-<em>(Clic-droit+glisser)</em> - fait pivoter les objets ou la grille autour du point de pivot, là où vous avez commencé l'opération de glisser.
+<dl><dt>
+<em>(Maj+Gauche+glisser)</em>
+</dt>
+<dd>
+Déplace les objets ou la grille.
+</dd>
+<dt>
+<em>(Ctrl+Gauche+glisser)</em>
+</dt>
+<dd>
+Fait pivoter les objets ou la grille autour du point de pivot, qui est le point où vous avez commencé l'opération de glissement.
 </dd>
 </dl>
 <p>
-Certaines commandes ont besoin des touches <code>Shift</code> ou <code>Ctrl</code> pour modifier le sens des pressions sur les boutons.
+Certaines autres commandes utilisent la touche <code>Maj</code> ou <code>Ctrl</code> pour modifier la signification des pressions sur les boutons.
 </p>
 <hr>
 <ul>
-<li><a href="mouseBcmd.html#mouseBcmd">3.4.1 Context Sensitive Menus</a></li>
+<li><a href="mouseBcmd.html#mouseBcmd">3.4.1 Menus contextuels</a></li>
 </ul>
 
 <hr><address></address></body>
